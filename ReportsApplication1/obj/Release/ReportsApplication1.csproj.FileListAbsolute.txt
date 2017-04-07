@@ -1,0 +1,16 @@
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\bin\Release\Reparationsunderlag.exe.config
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\bin\Release\Reparationsunderlag.exe.manifest
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\bin\Release\Reparationsunderlag.application
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\bin\Release\Reparationsunderlag.exe
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\bin\Release\Reparationsunderlag.pdb
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\obj\Release\ReportsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\obj\Release\Reparationsunderlag.Form1.resources
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\obj\Release\Reparationsunderlag.Properties.Resources.resources
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\obj\Release\ReportsApplication1.csproj.GenerateResource.Cache
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\obj\Release\RdlCompile.cache
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\obj\Release\RdlCompile.compiled
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\obj\Release\Reparationsunderlag.exe.manifest
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\obj\Release\Reparationsunderlag.application
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\obj\Release\Reparationsunderlag.exe
+C:\Users\K3\Desktop\ReportsApplication1\ReportsApplication1\obj\Release\Reparationsunderlag.pdb
