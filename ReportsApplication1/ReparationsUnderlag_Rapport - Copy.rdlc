@@ -162,35 +162,6 @@
           </Textbox>
           <Rectangle Name="Rectangle2">
             <ReportItems>
-              <Textbox Name="Leverantör">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>=Parameters!SelectedSupplier.Value</Value>
-                        <Style />
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Leverantör</rd:DefaultName>
-                <Top>0.90812cm</Top>
-                <Left>4.02577cm</Left>
-                <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
               <Textbox Name="KundID">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
@@ -209,8 +180,7 @@
                 <Top>2.1864cm</Top>
                 <Left>4.02577cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>1</ZIndex>
+                <Width>6.04132cm</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -239,8 +209,8 @@
                 <Top>3.43904cm</Top>
                 <Left>4.02577cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>2</ZIndex>
+                <Width>6.04132cm</Width>
+                <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -269,8 +239,8 @@
                 <Top>4.58585cm</Top>
                 <Left>4.02574cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>3</ZIndex>
+                <Width>6.04132cm</Width>
+                <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -299,42 +269,8 @@
                 <Top>8.96056cm</Top>
                 <Left>4.0257cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>4</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox4">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Leverantör:</Value>
-                        <Style>
-                          <FontFamily>Verdana</FontFamily>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Right</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.90812cm</Top>
-                <Left>0.97896cm</Left>
-                <Height>0.6cm</Height>
-                <Width>2.5cm</Width>
-                <ZIndex>5</ZIndex>
+                <Width>6.04132cm</Width>
+                <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -368,7 +304,7 @@
                 <Left>0.97896cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
-                <ZIndex>6</ZIndex>
+                <ZIndex>4</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -402,7 +338,7 @@
                 <Left>0.3175cm</Left>
                 <Height>0.6cm</Height>
                 <Width>3.16146cm</Width>
-                <ZIndex>7</ZIndex>
+                <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -436,7 +372,7 @@
                 <Left>0.31747cm</Left>
                 <Height>0.6cm</Height>
                 <Width>3.16146cm</Width>
-                <ZIndex>8</ZIndex>
+                <ZIndex>6</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -470,7 +406,7 @@
                 <Left>0.31743cm</Left>
                 <Height>0.6cm</Height>
                 <Width>3.16146cm</Width>
-                <ZIndex>9</ZIndex>
+                <ZIndex>7</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -504,7 +440,7 @@
                 <Left>0.3175cm</Left>
                 <Height>0.6cm</Height>
                 <Width>3.16139cm</Width>
-                <ZIndex>10</ZIndex>
+                <ZIndex>8</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -533,8 +469,8 @@
                 <Top>5.76792cm</Top>
                 <Left>4.02574cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>11</ZIndex>
+                <Width>6.04132cm</Width>
+                <ZIndex>9</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -568,7 +504,7 @@
                 <Left>0.97893cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
-                <ZIndex>12</ZIndex>
+                <ZIndex>10</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -597,8 +533,8 @@
                 <Top>7.01146cm</Top>
                 <Left>4.02575cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>13</ZIndex>
+                <Width>6.04132cm</Width>
+                <ZIndex>11</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -632,7 +568,7 @@
                 <Left>0.97893cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
-                <ZIndex>14</ZIndex>
+                <ZIndex>12</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -661,8 +597,8 @@
                 <Top>8.18417cm</Top>
                 <Left>4.02572cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14713cm</Width>
-                <ZIndex>15</ZIndex>
+                <Width>6.0413cm</Width>
+                <ZIndex>13</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -696,7 +632,7 @@
                 <Left>0.97891cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
-                <ZIndex>16</ZIndex>
+                <ZIndex>14</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -725,8 +661,8 @@
                 <Top>10.15118cm</Top>
                 <Left>4.02577cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>17</ZIndex>
+                <Width>6.04132cm</Width>
+                <ZIndex>15</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -846,9 +782,9 @@
             </Paragraphs>
             <rd:DefaultName>DokumentDatum</rd:DefaultName>
             <Top>2.7485cm</Top>
-            <Left>12.0256cm</Left>
+            <Left>12.23726cm</Left>
             <Height>0.6cm</Height>
-            <Width>4.16689cm</Width>
+            <Width>3.95523cm</Width>
             <ZIndex>5</ZIndex>
             <Style>
               <Border>
@@ -880,7 +816,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
             <Top>2.7485cm</Top>
-            <Left>9.05818cm</Left>
+            <Left>9.26984cm</Left>
             <Height>0.6cm</Height>
             <Width>2.79103cm</Width>
             <ZIndex>6</ZIndex>
@@ -912,9 +848,9 @@
             </Paragraphs>
             <rd:DefaultName>Användare</rd:DefaultName>
             <Top>3.54225cm</Top>
-            <Left>12.02561cm</Left>
+            <Left>12.23727cm</Left>
             <Height>0.6cm</Height>
-            <Width>4.06105cm</Width>
+            <Width>3.84939cm</Width>
             <ZIndex>7</ZIndex>
             <Style>
               <Border>
@@ -946,7 +882,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
             <Top>3.54225cm</Top>
-            <Left>9.05818cm</Left>
+            <Left>9.26984cm</Left>
             <Height>0.6cm</Height>
             <Width>2.79104cm</Width>
             <ZIndex>8</ZIndex>
@@ -1013,11 +949,6 @@
   </ReportSections>
   <ReportParameters>
     <ReportParameter Name="SelectedDokID">
-      <DataType>String</DataType>
-      <AllowBlank>true</AllowBlank>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="SelectedSupplier">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
@@ -1089,11 +1020,6 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>SelectedDokID</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>SelectedSupplier</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>

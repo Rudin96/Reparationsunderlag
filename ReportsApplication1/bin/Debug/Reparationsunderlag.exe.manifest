@@ -75,14 +75,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Reparationsunderlag.exe" size="884104">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Reparationsunderlag.exe" size="966024">
       <assemblyIdentity name="Reparationsunderlag" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8SPOsoSOs/m0GgJTd8sXDD9NFmxMdQXG5CjPFGXJXWE=</dsig:DigestValue>
+        <dsig:DigestValue>yfFQwzDrgpiHDQAgPdUTBiMEVJyUWzApfoBW9BQ3rQo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

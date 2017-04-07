@@ -274,12 +274,27 @@ namespace Reparationsunderlag
             }
             else
             {
+                if (CopyCheckbox.Checked != true)
+                {
+                    this.Validate();
+                    this.ReparationsunderlagBindingSource.EndEdit();
+                    this.tableAdapterManager.UpdateAll(this.DataSet1);
+                    reportViewer1.PrinterSettings.Copies = 2;
+                    reportViewer1.PrintDialog();
+                }
+                else
+                {
+                    this.Validate();
+                    this.ReparationsunderlagBindingSource.EndEdit();
+                    this.tableAdapterManager.UpdateAll(this.DataSet1);
+                    reportViewer1.PrinterSettings.Copies = 2;
+                    reportViewer1.PrintDialog();
+                    reportViewer1.LocalReport.ReportEmbeddedResource = "Reparationsunderlag.Reparationsunderlag_Rapport - Copy.rdlc";
+                    //reportViewer1.PrinterSettings.Copies = 1;
+                    //reportViewer1.PrintDialog();
+                }
 
-                this.Validate();
-                this.ReparationsunderlagBindingSource.EndEdit();
-                this.tableAdapterManager.UpdateAll(this.DataSet1);
-                reportViewer1.PrinterSettings.Copies = 2;
-                reportViewer1.PrintDialog();
+                
             }
             
             

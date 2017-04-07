@@ -63,6 +63,7 @@ namespace Reparationsunderlag
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.CopyCheckbox = new System.Windows.Forms.CheckBox();
             this.SupplierTextBox = new System.Windows.Forms.ComboBox();
             this.maskintypTextBox = new System.Windows.Forms.TextBox();
             this.märkeTextBox = new System.Windows.Forms.TextBox();
@@ -510,6 +511,7 @@ namespace Reparationsunderlag
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.AutoScroll = true;
+            this.splitContainer1.Panel1.Controls.Add(this.CopyCheckbox);
             this.splitContainer1.Panel1.Controls.Add(leverantörLabel);
             this.splitContainer1.Panel1.Controls.Add(this.SupplierTextBox);
             this.splitContainer1.Panel1.Controls.Add(maskintypLabel);
@@ -545,6 +547,17 @@ namespace Reparationsunderlag
             this.splitContainer1.SplitterDistance = 556;
             this.splitContainer1.TabIndex = 0;
             this.splitContainer1.TabStop = false;
+            // 
+            // CopyCheckbox
+            // 
+            this.CopyCheckbox.AutoSize = true;
+            this.CopyCheckbox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CopyCheckbox.Location = new System.Drawing.Point(269, 627);
+            this.CopyCheckbox.Name = "CopyCheckbox";
+            this.CopyCheckbox.Size = new System.Drawing.Size(116, 17);
+            this.CopyCheckbox.TabIndex = 27;
+            this.CopyCheckbox.Text = "Kund vill ha kopia?";
+            this.CopyCheckbox.UseVisualStyleBackColor = true;
             // 
             // SupplierTextBox
             // 
@@ -1878,5 +1891,6 @@ namespace Reparationsunderlag
         private System.Windows.Forms.ToolStripButton toolStripButton10;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox2;
         private System.Windows.Forms.NotifyIcon notifyIcon2;
+        private System.Windows.Forms.CheckBox CopyCheckbox;
     }
 }
