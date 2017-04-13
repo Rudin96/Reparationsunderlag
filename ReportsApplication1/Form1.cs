@@ -70,7 +70,7 @@ namespace Reparationsunderlag
                 ReportParameter r11 = new ReportParameter("SelectedStaffID", User);
                 ReportParameter r12 = new ReportParameter("SelectedMark", Mark);
                 ReportParameter r13 = new ReportParameter("SelectedMachinetype", MachineType);
-                reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r6, r7, r8, r9, r10, r11, r12, r13 });
+                //reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r6, r7, r8, r9, r10, r11, r12, r13 });
 
                 
 
@@ -131,7 +131,7 @@ namespace Reparationsunderlag
                 ReportParameter r11 = new ReportParameter("SelectedStaffID", User);
                 ReportParameter r12 = new ReportParameter("SelectedMark", Mark);
                 ReportParameter r13 = new ReportParameter("SelectedMachinetype", MachineType);
-                reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r6, r7, r8, r9, r10, r11, r12, r13 });
+                //reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r6, r7, r8, r9, r10, r11, r12, r13 });
 
                 
 
@@ -187,7 +187,7 @@ namespace Reparationsunderlag
             ReportParameter r11 = new ReportParameter("SelectedStaffID", User);
             ReportParameter r12 = new ReportParameter("SelectedMark", Mark);
             ReportParameter r13 = new ReportParameter("SelectedMachinetype", Machinetype);
-            reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r6, r7, r8, r9, r10, r11, r12, r13 });
+            //reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r6, r7, r8, r9, r10, r11, r12, r13 });
 
             
 
@@ -289,7 +289,7 @@ namespace Reparationsunderlag
                     this.tableAdapterManager.UpdateAll(this.DataSet1);
                     reportViewer1.PrinterSettings.Copies = 2;
                     reportViewer1.PrintDialog();
-                    reportViewer1.LocalReport.ReportEmbeddedResource = "Reparationsunderlag.Reparationsunderlag_Rapport - Copy.rdlc";
+                    //reportViewer1.LocalReport.ReportEmbeddedResource = "Reparationsunderlag.Reparationsunderlag_Rapport - Copy.rdlc";
                     //reportViewer1.PrinterSettings.Copies = 1;
                     //reportViewer1.PrintDialog();
                 }
@@ -384,6 +384,28 @@ namespace Reparationsunderlag
             this.tableAdapterManager1.UpdateAll(this.kassasystem_DataSet);
         }
 
-        
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+            if                                                                                                                                              (DokIDSearchBox.Text.Contains(null) | DokumentDatumSearchBox.Text.Contains(null) | LeverantorSearchBox.Text.Contains(null) | KundIDSearchbox.Text.Contains(null) | KundkontaktSearchBox.Text.Contains(null) | TelefonnummerSearchBox.Text.Contains(null) | FelbeskrivningSearchBox.Text.Contains(null) | AnvandareSearchBox.Text.Contains(null) | GarantiSearchBox.Text.Contains(null) | EpostSearchBox.Text.Contains(null) | SerienummerSearchBox.Text.Contains(null) | MarkeSearchBox.Text.Contains(null) | MaskintypSearchBox.Text.Contains(null) | KlarSearchBox.Text.Contains(null))
+            {
+                this.ReparationsunderlagTableAdapter.Adapter.SelectCommand.CommandText = "Select * From dbo.Reparationsunderlag Order By DokumentID ASC";
+
+            } else
+            {
+
+                this.ReparationsunderlagTableAdapter.Adapter.SelectCommand.CommandText = "Select * From dbo.Reparationsunderlag WHERE DokumentID Like '%" + DokIDSearchBox.Text + "%' OR DokumentDatum LIKE '%" + DokumentDatumSearchBox.Text + "%' OR DokumentDatum LIKE '%" + LeverantorSearchBox.Text + "%' OR DokumentDatum LIKE '%" + KundIDSearchbox.Text + "%' OR DokumentDatum LIKE '%" + KundkontaktSearchBox.Text + "%' OR DokumentDatum LIKE '%" + TelefonnummerSearchBox.Text + "%' OR DokumentDatum LIKE '%" + FelbeskrivningSearchBox.Text + "%' OR DokumentDatum LIKE '%" + AnvandareSearchBox.Text + "%' OR DokumentDatum LIKE '%" + GarantiSearchBox.Text + "%' OR DokumentDatum LIKE '%" + EpostSearchBox.Text + "%' OR DokumentDatum LIKE '%" + SerienummerSearchBox.Text + "%' OR DokumentDatum LIKE '%" + MarkeSearchBox.Text + "%' OR DokumentDatum LIKE '%" + MaskintypSearchBox.Text + "%' OR DokumentDatum LIKE '%" + MaskintypSearchBox.Text + "%' OR DokumentDatum LIKE '%" + KlarSearchBox.Text + "%' Order By DokumentID ASC";
+
+            }
+        }
     }
 }
