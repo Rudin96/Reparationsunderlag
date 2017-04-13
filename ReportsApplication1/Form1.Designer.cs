@@ -57,7 +57,6 @@ namespace Reparationsunderlag
             System.Windows.Forms.Label marginalkalkylLabel;
             System.Windows.Forms.Label leverantörLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.ReparationsunderlagBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSet1 = new Reparationsunderlag.DataSet1();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -93,6 +92,37 @@ namespace Reparationsunderlag
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.ClearParamsButton = new System.Windows.Forms.Button();
+            this.SearchButton = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.KlarSearchBox = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.MaskintypSearchBox = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.MarkeSearchBox = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.SerienummerSearchBox = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.EpostSearchBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.GarantiSearchBox = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.AnvandareSearchBox = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.FelbeskrivningSearchBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.TelefonnummerSearchBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.KundkontaktSearchBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.KundIDSearchbox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.LeverantorSearchBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.DokumentDatumSearchBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.DokIDSearchBox = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dokumentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dokumentDatumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -186,37 +216,6 @@ namespace Reparationsunderlag
             this.serviceController1 = new System.ServiceProcess.ServiceController();
             this.serviceController2 = new System.ServiceProcess.ServiceController();
             this.notifyIcon2 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.DokIDSearchBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.DokumentDatumSearchBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.LeverantorSearchBox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.KundIDSearchbox = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.KundkontaktSearchBox = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.TelefonnummerSearchBox = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.FelbeskrivningSearchBox = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.AnvandareSearchBox = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.GarantiSearchBox = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.EpostSearchBox = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.SerienummerSearchBox = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.MarkeSearchBox = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.MaskintypSearchBox = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.KlarSearchBox = new System.Windows.Forms.TextBox();
-            this.SearchButton = new System.Windows.Forms.Button();
-            this.ClearParamsButton = new System.Windows.Forms.Button();
             dokumentIDLabel = new System.Windows.Forms.Label();
             dokumentDatumLabel = new System.Windows.Forms.Label();
             kundIDLabel = new System.Windows.Forms.Label();
@@ -255,6 +254,10 @@ namespace Reparationsunderlag
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -271,10 +274,6 @@ namespace Reparationsunderlag
             this.ReportViewerContextMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
-            this.splitContainer2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dokumentIDLabel
@@ -874,12 +873,11 @@ namespace Reparationsunderlag
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource3.Name = "Reparationsdataset";
-            reportDataSource3.Value = this.ReparationsunderlagBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Reparationsunderlag.ReparationsUnderlag_Rapport.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote;
+            this.reportViewer1.ServerReport.ReportPath = "/Reparationsunderlag/ReparationsUnderlag_Rapport";
+            this.reportViewer1.ServerReport.ReportServerUrl = new System.Uri("http://192.168.0.117/reportserver", System.UriKind.Absolute);
             this.reportViewer1.ShowContextMenu = false;
             this.reportViewer1.ShowToolBar = false;
             this.reportViewer1.Size = new System.Drawing.Size(504, 731);
@@ -898,6 +896,298 @@ namespace Reparationsunderlag
             this.tabPage4.Text = "Historik";
             this.tabPage4.UseVisualStyleBackColor = true;
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.Controls.Add(this.ClearParamsButton);
+            this.splitContainer2.Panel1.Controls.Add(this.SearchButton);
+            this.splitContainer2.Panel1.Controls.Add(this.label15);
+            this.splitContainer2.Panel1.Controls.Add(this.KlarSearchBox);
+            this.splitContainer2.Panel1.Controls.Add(this.label14);
+            this.splitContainer2.Panel1.Controls.Add(this.MaskintypSearchBox);
+            this.splitContainer2.Panel1.Controls.Add(this.label13);
+            this.splitContainer2.Panel1.Controls.Add(this.MarkeSearchBox);
+            this.splitContainer2.Panel1.Controls.Add(this.label12);
+            this.splitContainer2.Panel1.Controls.Add(this.SerienummerSearchBox);
+            this.splitContainer2.Panel1.Controls.Add(this.label11);
+            this.splitContainer2.Panel1.Controls.Add(this.EpostSearchBox);
+            this.splitContainer2.Panel1.Controls.Add(this.label10);
+            this.splitContainer2.Panel1.Controls.Add(this.GarantiSearchBox);
+            this.splitContainer2.Panel1.Controls.Add(this.label9);
+            this.splitContainer2.Panel1.Controls.Add(this.AnvandareSearchBox);
+            this.splitContainer2.Panel1.Controls.Add(this.label8);
+            this.splitContainer2.Panel1.Controls.Add(this.FelbeskrivningSearchBox);
+            this.splitContainer2.Panel1.Controls.Add(this.label7);
+            this.splitContainer2.Panel1.Controls.Add(this.TelefonnummerSearchBox);
+            this.splitContainer2.Panel1.Controls.Add(this.label6);
+            this.splitContainer2.Panel1.Controls.Add(this.KundkontaktSearchBox);
+            this.splitContainer2.Panel1.Controls.Add(this.label5);
+            this.splitContainer2.Panel1.Controls.Add(this.KundIDSearchbox);
+            this.splitContainer2.Panel1.Controls.Add(this.label4);
+            this.splitContainer2.Panel1.Controls.Add(this.LeverantorSearchBox);
+            this.splitContainer2.Panel1.Controls.Add(this.label3);
+            this.splitContainer2.Panel1.Controls.Add(this.DokumentDatumSearchBox);
+            this.splitContainer2.Panel1.Controls.Add(this.label2);
+            this.splitContainer2.Panel1.Controls.Add(this.DokIDSearchBox);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.dataGridView1);
+            this.splitContainer2.Size = new System.Drawing.Size(1070, 737);
+            this.splitContainer2.SplitterDistance = 202;
+            this.splitContainer2.TabIndex = 1;
+            // 
+            // ClearParamsButton
+            // 
+            this.ClearParamsButton.Location = new System.Drawing.Point(203, 167);
+            this.ClearParamsButton.Name = "ClearParamsButton";
+            this.ClearParamsButton.Size = new System.Drawing.Size(115, 23);
+            this.ClearParamsButton.TabIndex = 29;
+            this.ClearParamsButton.Text = "Rensa Parametrar";
+            this.ClearParamsButton.UseVisualStyleBackColor = true;
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.Location = new System.Drawing.Point(122, 167);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(75, 23);
+            this.SearchButton.TabIndex = 28;
+            this.SearchButton.Text = "Sök";
+            this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(478, 106);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(25, 13);
+            this.label15.TabIndex = 27;
+            this.label15.Text = "Klar";
+            // 
+            // KlarSearchBox
+            // 
+            this.KlarSearchBox.Location = new System.Drawing.Point(509, 103);
+            this.KlarSearchBox.Name = "KlarSearchBox";
+            this.KlarSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.KlarSearchBox.TabIndex = 26;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(450, 80);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 13);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Maskintyp";
+            // 
+            // MaskintypSearchBox
+            // 
+            this.MaskintypSearchBox.Location = new System.Drawing.Point(509, 77);
+            this.MaskintypSearchBox.Name = "MaskintypSearchBox";
+            this.MaskintypSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.MaskintypSearchBox.TabIndex = 24;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(468, 54);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(37, 13);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Märke";
+            // 
+            // MarkeSearchBox
+            // 
+            this.MarkeSearchBox.Location = new System.Drawing.Point(509, 51);
+            this.MarkeSearchBox.Name = "MarkeSearchBox";
+            this.MarkeSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.MarkeSearchBox.TabIndex = 22;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(437, 28);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(68, 13);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "Serienummer";
+            // 
+            // SerienummerSearchBox
+            // 
+            this.SerienummerSearchBox.Location = new System.Drawing.Point(509, 25);
+            this.SerienummerSearchBox.Name = "SerienummerSearchBox";
+            this.SerienummerSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.SerienummerSearchBox.TabIndex = 20;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(274, 132);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(34, 13);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Epost";
+            // 
+            // EpostSearchBox
+            // 
+            this.EpostSearchBox.Location = new System.Drawing.Point(311, 129);
+            this.EpostSearchBox.Name = "EpostSearchBox";
+            this.EpostSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.EpostSearchBox.TabIndex = 18;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(267, 106);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 13);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Garanti";
+            // 
+            // GarantiSearchBox
+            // 
+            this.GarantiSearchBox.Location = new System.Drawing.Point(311, 103);
+            this.GarantiSearchBox.Name = "GarantiSearchBox";
+            this.GarantiSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.GarantiSearchBox.TabIndex = 16;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(249, 80);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(59, 13);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Användare";
+            // 
+            // AnvandareSearchBox
+            // 
+            this.AnvandareSearchBox.Location = new System.Drawing.Point(311, 77);
+            this.AnvandareSearchBox.Name = "AnvandareSearchBox";
+            this.AnvandareSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.AnvandareSearchBox.TabIndex = 14;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(233, 54);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(75, 13);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Felbeskrivning";
+            // 
+            // FelbeskrivningSearchBox
+            // 
+            this.FelbeskrivningSearchBox.Location = new System.Drawing.Point(311, 51);
+            this.FelbeskrivningSearchBox.Name = "FelbeskrivningSearchBox";
+            this.FelbeskrivningSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.FelbeskrivningSearchBox.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(228, 28);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(80, 13);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Telefonnummer";
+            // 
+            // TelefonnummerSearchBox
+            // 
+            this.TelefonnummerSearchBox.Location = new System.Drawing.Point(311, 25);
+            this.TelefonnummerSearchBox.Name = "TelefonnummerSearchBox";
+            this.TelefonnummerSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.TelefonnummerSearchBox.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(48, 132);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 13);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Kundkontakt";
+            // 
+            // KundkontaktSearchBox
+            // 
+            this.KundkontaktSearchBox.Location = new System.Drawing.Point(122, 129);
+            this.KundkontaktSearchBox.Name = "KundkontaktSearchBox";
+            this.KundkontaktSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.KundkontaktSearchBox.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(73, 106);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "KundID";
+            // 
+            // KundIDSearchbox
+            // 
+            this.KundIDSearchbox.Location = new System.Drawing.Point(122, 103);
+            this.KundIDSearchbox.Name = "KundIDSearchbox";
+            this.KundIDSearchbox.Size = new System.Drawing.Size(100, 20);
+            this.KundIDSearchbox.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(58, 80);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Leverantör";
+            // 
+            // LeverantorSearchBox
+            // 
+            this.LeverantorSearchBox.Location = new System.Drawing.Point(122, 77);
+            this.LeverantorSearchBox.Name = "LeverantorSearchBox";
+            this.LeverantorSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.LeverantorSearchBox.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(29, 54);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "DokumentDatum";
+            // 
+            // DokumentDatumSearchBox
+            // 
+            this.DokumentDatumSearchBox.Location = new System.Drawing.Point(122, 51);
+            this.DokumentDatumSearchBox.Name = "DokumentDatumSearchBox";
+            this.DokumentDatumSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.DokumentDatumSearchBox.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(49, 28);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "DokumentID";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // DokIDSearchBox
+            // 
+            this.DokIDSearchBox.Location = new System.Drawing.Point(122, 25);
+            this.DokIDSearchBox.Name = "DokIDSearchBox";
+            this.DokIDSearchBox.Size = new System.Drawing.Size(100, 20);
+            this.DokIDSearchBox.TabIndex = 0;
             // 
             // dataGridView1
             // 
@@ -1739,298 +2029,6 @@ namespace Reparationsunderlag
             this.notifyIcon2.Text = "notifyIcon2";
             this.notifyIcon2.Visible = true;
             // 
-            // splitContainer2
-            // 
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Name = "splitContainer2";
-            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.Controls.Add(this.ClearParamsButton);
-            this.splitContainer2.Panel1.Controls.Add(this.SearchButton);
-            this.splitContainer2.Panel1.Controls.Add(this.label15);
-            this.splitContainer2.Panel1.Controls.Add(this.KlarSearchBox);
-            this.splitContainer2.Panel1.Controls.Add(this.label14);
-            this.splitContainer2.Panel1.Controls.Add(this.MaskintypSearchBox);
-            this.splitContainer2.Panel1.Controls.Add(this.label13);
-            this.splitContainer2.Panel1.Controls.Add(this.MarkeSearchBox);
-            this.splitContainer2.Panel1.Controls.Add(this.label12);
-            this.splitContainer2.Panel1.Controls.Add(this.SerienummerSearchBox);
-            this.splitContainer2.Panel1.Controls.Add(this.label11);
-            this.splitContainer2.Panel1.Controls.Add(this.EpostSearchBox);
-            this.splitContainer2.Panel1.Controls.Add(this.label10);
-            this.splitContainer2.Panel1.Controls.Add(this.GarantiSearchBox);
-            this.splitContainer2.Panel1.Controls.Add(this.label9);
-            this.splitContainer2.Panel1.Controls.Add(this.AnvandareSearchBox);
-            this.splitContainer2.Panel1.Controls.Add(this.label8);
-            this.splitContainer2.Panel1.Controls.Add(this.FelbeskrivningSearchBox);
-            this.splitContainer2.Panel1.Controls.Add(this.label7);
-            this.splitContainer2.Panel1.Controls.Add(this.TelefonnummerSearchBox);
-            this.splitContainer2.Panel1.Controls.Add(this.label6);
-            this.splitContainer2.Panel1.Controls.Add(this.KundkontaktSearchBox);
-            this.splitContainer2.Panel1.Controls.Add(this.label5);
-            this.splitContainer2.Panel1.Controls.Add(this.KundIDSearchbox);
-            this.splitContainer2.Panel1.Controls.Add(this.label4);
-            this.splitContainer2.Panel1.Controls.Add(this.LeverantorSearchBox);
-            this.splitContainer2.Panel1.Controls.Add(this.label3);
-            this.splitContainer2.Panel1.Controls.Add(this.DokumentDatumSearchBox);
-            this.splitContainer2.Panel1.Controls.Add(this.label2);
-            this.splitContainer2.Panel1.Controls.Add(this.DokIDSearchBox);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer2.Size = new System.Drawing.Size(1070, 737);
-            this.splitContainer2.SplitterDistance = 202;
-            this.splitContainer2.TabIndex = 1;
-            // 
-            // DokIDSearchBox
-            // 
-            this.DokIDSearchBox.Location = new System.Drawing.Point(122, 25);
-            this.DokIDSearchBox.Name = "DokIDSearchBox";
-            this.DokIDSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.DokIDSearchBox.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 28);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(67, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "DokumentID";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 54);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "DokumentDatum";
-            // 
-            // DokumentDatumSearchBox
-            // 
-            this.DokumentDatumSearchBox.Location = new System.Drawing.Point(122, 51);
-            this.DokumentDatumSearchBox.Name = "DokumentDatumSearchBox";
-            this.DokumentDatumSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.DokumentDatumSearchBox.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(58, 80);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Leverantör";
-            // 
-            // LeverantorSearchBox
-            // 
-            this.LeverantorSearchBox.Location = new System.Drawing.Point(122, 77);
-            this.LeverantorSearchBox.Name = "LeverantorSearchBox";
-            this.LeverantorSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.LeverantorSearchBox.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(73, 106);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "KundID";
-            // 
-            // KundIDSearchbox
-            // 
-            this.KundIDSearchbox.Location = new System.Drawing.Point(122, 103);
-            this.KundIDSearchbox.Name = "KundIDSearchbox";
-            this.KundIDSearchbox.Size = new System.Drawing.Size(100, 20);
-            this.KundIDSearchbox.TabIndex = 6;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(48, 132);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Kundkontakt";
-            // 
-            // KundkontaktSearchBox
-            // 
-            this.KundkontaktSearchBox.Location = new System.Drawing.Point(122, 129);
-            this.KundkontaktSearchBox.Name = "KundkontaktSearchBox";
-            this.KundkontaktSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.KundkontaktSearchBox.TabIndex = 8;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(228, 28);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 13);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Telefonnummer";
-            // 
-            // TelefonnummerSearchBox
-            // 
-            this.TelefonnummerSearchBox.Location = new System.Drawing.Point(311, 25);
-            this.TelefonnummerSearchBox.Name = "TelefonnummerSearchBox";
-            this.TelefonnummerSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.TelefonnummerSearchBox.TabIndex = 10;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(233, 54);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 13);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Felbeskrivning";
-            // 
-            // FelbeskrivningSearchBox
-            // 
-            this.FelbeskrivningSearchBox.Location = new System.Drawing.Point(311, 51);
-            this.FelbeskrivningSearchBox.Name = "FelbeskrivningSearchBox";
-            this.FelbeskrivningSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.FelbeskrivningSearchBox.TabIndex = 12;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(249, 80);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 13);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Användare";
-            // 
-            // AnvandareSearchBox
-            // 
-            this.AnvandareSearchBox.Location = new System.Drawing.Point(311, 77);
-            this.AnvandareSearchBox.Name = "AnvandareSearchBox";
-            this.AnvandareSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.AnvandareSearchBox.TabIndex = 14;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(267, 106);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Garanti";
-            // 
-            // GarantiSearchBox
-            // 
-            this.GarantiSearchBox.Location = new System.Drawing.Point(311, 103);
-            this.GarantiSearchBox.Name = "GarantiSearchBox";
-            this.GarantiSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.GarantiSearchBox.TabIndex = 16;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(274, 132);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(34, 13);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Epost";
-            // 
-            // EpostSearchBox
-            // 
-            this.EpostSearchBox.Location = new System.Drawing.Point(311, 129);
-            this.EpostSearchBox.Name = "EpostSearchBox";
-            this.EpostSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.EpostSearchBox.TabIndex = 18;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(437, 28);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 13);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "Serienummer";
-            // 
-            // SerienummerSearchBox
-            // 
-            this.SerienummerSearchBox.Location = new System.Drawing.Point(509, 25);
-            this.SerienummerSearchBox.Name = "SerienummerSearchBox";
-            this.SerienummerSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.SerienummerSearchBox.TabIndex = 20;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(468, 54);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(37, 13);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "Märke";
-            // 
-            // MarkeSearchBox
-            // 
-            this.MarkeSearchBox.Location = new System.Drawing.Point(509, 51);
-            this.MarkeSearchBox.Name = "MarkeSearchBox";
-            this.MarkeSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.MarkeSearchBox.TabIndex = 22;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(450, 80);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 13);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "Maskintyp";
-            // 
-            // MaskintypSearchBox
-            // 
-            this.MaskintypSearchBox.Location = new System.Drawing.Point(509, 77);
-            this.MaskintypSearchBox.Name = "MaskintypSearchBox";
-            this.MaskintypSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.MaskintypSearchBox.TabIndex = 24;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(478, 106);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(25, 13);
-            this.label15.TabIndex = 27;
-            this.label15.Text = "Klar";
-            // 
-            // KlarSearchBox
-            // 
-            this.KlarSearchBox.Location = new System.Drawing.Point(509, 103);
-            this.KlarSearchBox.Name = "KlarSearchBox";
-            this.KlarSearchBox.Size = new System.Drawing.Size(100, 20);
-            this.KlarSearchBox.TabIndex = 26;
-            // 
-            // SearchButton
-            // 
-            this.SearchButton.Location = new System.Drawing.Point(122, 167);
-            this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(75, 23);
-            this.SearchButton.TabIndex = 28;
-            this.SearchButton.Text = "Sök";
-            this.SearchButton.UseVisualStyleBackColor = true;
-            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
-            // 
-            // ClearParamsButton
-            // 
-            this.ClearParamsButton.Location = new System.Drawing.Point(203, 167);
-            this.ClearParamsButton.Name = "ClearParamsButton";
-            this.ClearParamsButton.Size = new System.Drawing.Size(115, 23);
-            this.ClearParamsButton.TabIndex = 29;
-            this.ClearParamsButton.Text = "Rensa Parametrar";
-            this.ClearParamsButton.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2064,6 +2062,11 @@ namespace Reparationsunderlag
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             this.tabPage4.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.PerformLayout();
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
@@ -2086,11 +2089,6 @@ namespace Reparationsunderlag
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel1.PerformLayout();
-            this.splitContainer2.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-            this.splitContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -1,14 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition">
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSet1">
       <ConnectionProperties>
-        <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=WIN-2PD73CVMJBF;Initial Catalog=REPARATIONS_DATA</ConnectString>
-        <IntegratedSecurity>true</IntegratedSecurity>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:SecurityType>Integrated</rd:SecurityType>
       <rd:DataSourceID>a64cbd5f-8ed5-4577-bd51-0ffe79dbfa90</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -92,11 +90,6 @@
                 <Style>None</Style>
               </Border>
             </Style>
-            <cl:ComponentMetadata>
-              <cl:ComponentId>edcffefa-e8c1-465e-9c47-59688e055a4f</cl:ComponentId>
-              <cl:SourcePath>/Report Parts/Logga</cl:SourcePath>
-              <cl:SyncDate>2017-04-13T14:10:48.2230254+02:00</cl:SyncDate>
-            </cl:ComponentMetadata>
           </Image>
           <Textbox Name="Textbox2">
             <CanGrow>true</CanGrow>
@@ -169,35 +162,6 @@
           </Textbox>
           <Rectangle Name="Rectangle2">
             <ReportItems>
-              <Textbox Name="Leverantör">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>=Parameters!SelectedSupplier.Value</Value>
-                        <Style />
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Leverantör</rd:DefaultName>
-                <Top>0.90812cm</Top>
-                <Left>4.02577cm</Left>
-                <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
               <Textbox Name="KundID">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
@@ -216,8 +180,7 @@
                 <Top>2.1864cm</Top>
                 <Left>4.02577cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>1</ZIndex>
+                <Width>6.04132cm</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -246,8 +209,8 @@
                 <Top>3.43904cm</Top>
                 <Left>4.02577cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>2</ZIndex>
+                <Width>6.04132cm</Width>
+                <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -276,8 +239,8 @@
                 <Top>4.58585cm</Top>
                 <Left>4.02574cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>3</ZIndex>
+                <Width>6.04132cm</Width>
+                <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -306,42 +269,8 @@
                 <Top>8.96056cm</Top>
                 <Left>4.0257cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>4</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox4">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Leverantör:</Value>
-                        <Style>
-                          <FontFamily>Verdana</FontFamily>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Right</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.90812cm</Top>
-                <Left>0.97896cm</Left>
-                <Height>0.6cm</Height>
-                <Width>2.5cm</Width>
-                <ZIndex>5</ZIndex>
+                <Width>6.04132cm</Width>
+                <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -375,7 +304,7 @@
                 <Left>0.97896cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
-                <ZIndex>6</ZIndex>
+                <ZIndex>4</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -409,7 +338,7 @@
                 <Left>0.3175cm</Left>
                 <Height>0.6cm</Height>
                 <Width>3.16146cm</Width>
-                <ZIndex>7</ZIndex>
+                <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -443,7 +372,7 @@
                 <Left>0.31747cm</Left>
                 <Height>0.6cm</Height>
                 <Width>3.16146cm</Width>
-                <ZIndex>8</ZIndex>
+                <ZIndex>6</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -477,7 +406,7 @@
                 <Left>0.31743cm</Left>
                 <Height>0.6cm</Height>
                 <Width>3.16146cm</Width>
-                <ZIndex>9</ZIndex>
+                <ZIndex>7</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -511,7 +440,7 @@
                 <Left>0.3175cm</Left>
                 <Height>0.6cm</Height>
                 <Width>3.16139cm</Width>
-                <ZIndex>10</ZIndex>
+                <ZIndex>8</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -540,8 +469,8 @@
                 <Top>5.76792cm</Top>
                 <Left>4.02574cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>11</ZIndex>
+                <Width>6.04132cm</Width>
+                <ZIndex>9</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -575,7 +504,7 @@
                 <Left>0.97893cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
-                <ZIndex>12</ZIndex>
+                <ZIndex>10</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -604,8 +533,8 @@
                 <Top>7.01146cm</Top>
                 <Left>4.02575cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>13</ZIndex>
+                <Width>6.04132cm</Width>
+                <ZIndex>11</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -639,7 +568,7 @@
                 <Left>0.97893cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
-                <ZIndex>14</ZIndex>
+                <ZIndex>12</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -668,8 +597,8 @@
                 <Top>8.18417cm</Top>
                 <Left>4.02572cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14713cm</Width>
-                <ZIndex>15</ZIndex>
+                <Width>6.0413cm</Width>
+                <ZIndex>13</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -703,7 +632,7 @@
                 <Left>0.97891cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
-                <ZIndex>16</ZIndex>
+                <ZIndex>14</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -732,8 +661,8 @@
                 <Top>10.15118cm</Top>
                 <Left>4.02577cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6.14715cm</Width>
-                <ZIndex>17</ZIndex>
+                <Width>6.04132cm</Width>
+                <ZIndex>15</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -757,11 +686,6 @@
                 <Width>0.25pt</Width>
               </Border>
             </Style>
-            <cl:ComponentMetadata>
-              <cl:ComponentId>41256dcf-9a5d-43cb-9e1f-f80434c8cf02</cl:ComponentId>
-              <cl:SourcePath>/Report Parts/Rectangle2</cl:SourcePath>
-              <cl:SyncDate>2017-04-13T14:10:50.4408305+02:00</cl:SyncDate>
-            </cl:ComponentMetadata>
           </Rectangle>
           <Rectangle Name="Rectangle3">
             <ReportItems>
@@ -839,11 +763,6 @@
                 <Width>0.25pt</Width>
               </Border>
             </Style>
-            <cl:ComponentMetadata>
-              <cl:ComponentId>63566632-7be4-4d05-90b3-75225d430a3a</cl:ComponentId>
-              <cl:SourcePath>/Report Parts/Rectangle3</cl:SourcePath>
-              <cl:SyncDate>2017-04-13T14:10:50.8333851+02:00</cl:SyncDate>
-            </cl:ComponentMetadata>
           </Rectangle>
           <Textbox Name="DokumentDatum">
             <CanGrow>true</CanGrow>
@@ -863,9 +782,9 @@
             </Paragraphs>
             <rd:DefaultName>DokumentDatum</rd:DefaultName>
             <Top>2.7485cm</Top>
-            <Left>12.0256cm</Left>
+            <Left>12.23726cm</Left>
             <Height>0.6cm</Height>
-            <Width>4.16689cm</Width>
+            <Width>3.95523cm</Width>
             <ZIndex>5</ZIndex>
             <Style>
               <Border>
@@ -897,7 +816,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
             <Top>2.7485cm</Top>
-            <Left>9.05818cm</Left>
+            <Left>9.26984cm</Left>
             <Height>0.6cm</Height>
             <Width>2.79103cm</Width>
             <ZIndex>6</ZIndex>
@@ -929,9 +848,9 @@
             </Paragraphs>
             <rd:DefaultName>Användare</rd:DefaultName>
             <Top>3.54225cm</Top>
-            <Left>12.02561cm</Left>
+            <Left>12.23727cm</Left>
             <Height>0.6cm</Height>
-            <Width>4.06105cm</Width>
+            <Width>3.84939cm</Width>
             <ZIndex>7</ZIndex>
             <Style>
               <Border>
@@ -963,7 +882,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
             <Top>3.54225cm</Top>
-            <Left>9.05818cm</Left>
+            <Left>9.26984cm</Left>
             <Height>0.6cm</Height>
             <Width>2.79104cm</Width>
             <ZIndex>8</ZIndex>
@@ -1033,133 +952,63 @@
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>2080bc95-3a16-462e-a4d4-e6445922ba3a</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedDokID</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:51.0052672+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
-    </ReportParameter>
-    <ReportParameter Name="SelectedSupplier">
-      <DataType>String</DataType>
-      <AllowBlank>true</AllowBlank>
-      <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>ca1718dc-7d9e-4717-86a5-2853e742fcba</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedSupplier</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:48.7831160+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
     </ReportParameter>
     <ReportParameter Name="SelectedCustomer">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>5aeaf509-50b1-45b2-acb9-329a5dcc8ad6</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedCustomer</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:48.9890564+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
     </ReportParameter>
     <ReportParameter Name="SelectedContact">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>dce32fdb-1a99-4d9f-a962-91012812ccf1</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedContact</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:49.1780939+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
     </ReportParameter>
     <ReportParameter Name="SelectedPhonenumber">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>0cc02b25-28ef-466e-84fb-0f1fbc2e724f</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedPhonenumber</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:49.3343616+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
     </ReportParameter>
     <ReportParameter Name="SelectedSerialnumber">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>fbce955c-26b8-4ff2-9a09-807c112aace7</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedSerialnumber</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:49.5062475+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
     </ReportParameter>
     <ReportParameter Name="SelectedWarranty">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>e3d1ddaf-318e-4813-bc67-3d66d73a9e4d</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedWarranty</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:50.2379479+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
     </ReportParameter>
     <ReportParameter Name="SelectedErrorDescription">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>c6d7a766-62cb-4b87-a544-965c4d12562b</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedErrorDescription</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:50.6442411+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
     </ReportParameter>
     <ReportParameter Name="SelectedDate">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>ed0ce6d7-64bf-41f7-8b4d-8e539f46dd08</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedDate</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:51.1947206+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
     </ReportParameter>
     <ReportParameter Name="SelectedStaffID">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>18f14954-9f52-4e0e-a4e2-c6aaf24c6bba</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedStaffID</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:51.3666244+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
     </ReportParameter>
     <ReportParameter Name="SelectedEmail">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>d52135b6-16f5-4aaf-bc32-df86c1c30011</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedEmail</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:49.6781476+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
     </ReportParameter>
     <ReportParameter Name="SelectedMark">
       <DataType>String</DataType>
       <Nullable>true</Nullable>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>f497c5cf-f146-430f-a663-ec84990b0d34</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedMark</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:49.8656606+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
     </ReportParameter>
     <ReportParameter Name="SelectedMachinetype">
       <DataType>String</DataType>
       <Nullable>true</Nullable>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
-      <cl:ComponentMetadata>
-        <cl:ComponentId>33f3861d-c41b-4d30-9749-327686771898</cl:ComponentId>
-        <cl:SourcePath>/Report Parts/SelectedMachinetype</cl:SourcePath>
-        <cl:SyncDate>2017-04-13T14:10:50.0531872+02:00</cl:SyncDate>
-      </cl:ComponentMetadata>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
@@ -1171,11 +1020,6 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>SelectedDokID</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>SelectedSupplier</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
@@ -1276,6 +1120,5 @@ x3P0YC8bnz2Qxz7xrTxWVYf6vWuqgQtTp+q6bt4fvSsfvH1pll81P8sXzMkHLp+Xyy67qN/LAAAAAAAA
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportServerUrl>http://192.168.0.117/reportserver</rd:ReportServerUrl>
   <rd:ReportID>2cf101bc-5db7-4aa6-9c14-0d6bde8a3e5d</rd:ReportID>
 </Report>
