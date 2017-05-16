@@ -148,6 +148,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -158,10 +159,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReparationsUnderlag_Rapport.rdlc" />
     <EmbeddedResource Include="Splashscreen.resx">
       <DependentUpon>Splashscreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="C:\Users\Tobias\Documents\Report1.rdl" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
@@ -208,7 +209,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="ReparationsUnderlag_Rapport.rdl" />
     <None Include="Reparationsunderlag_TemporaryKey.pfx" />
     <None Include="ReportsApplication1_TemporaryKey.pfx" />
   </ItemGroup>
