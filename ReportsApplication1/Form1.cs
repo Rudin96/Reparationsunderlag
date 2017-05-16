@@ -70,7 +70,7 @@ namespace Reparationsunderlag
                 ReportParameter r11 = new ReportParameter("SelectedStaffID", User);
                 ReportParameter r12 = new ReportParameter("SelectedMark", Mark);
                 ReportParameter r13 = new ReportParameter("SelectedMachinetype", MachineType);
-                reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r6, r7, r8, r9, r10, r11, r12, r13 });
+                reportViewer1.ServerReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
 
                 
 
@@ -131,7 +131,7 @@ namespace Reparationsunderlag
                 ReportParameter r11 = new ReportParameter("SelectedStaffID", User);
                 ReportParameter r12 = new ReportParameter("SelectedMark", Mark);
                 ReportParameter r13 = new ReportParameter("SelectedMachinetype", MachineType);
-                reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r6, r7, r8, r9, r10, r11, r12, r13 });
+                reportViewer1.ServerReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
 
                 
 
@@ -187,7 +187,7 @@ namespace Reparationsunderlag
             ReportParameter r11 = new ReportParameter("SelectedStaffID", User);
             ReportParameter r12 = new ReportParameter("SelectedMark", Mark);
             ReportParameter r13 = new ReportParameter("SelectedMachinetype", Machinetype);
-            reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r6, r7, r8, r9, r10, r11, r12, r13 });
+            reportViewer1.ServerReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
 
             
 
@@ -284,6 +284,13 @@ namespace Reparationsunderlag
             
             
             
+        }
+
+        private void ReportViewer1_Print(object sender, ReportPrintEventArgs e)
+        {
+           
+
+            throw new NotImplementedException();
         }
 
         private void reportViewer1_SendPrintInfo(object sender, ReportPrintEventArgs e)

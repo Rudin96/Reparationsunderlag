@@ -57,7 +57,7 @@ namespace Reparationsunderlag
             System.Windows.Forms.Label marginalkalkylLabel;
             System.Windows.Forms.Label leverantörLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource7 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.ReparationsunderlagBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSet1 = new Reparationsunderlag.DataSet1();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -559,8 +559,8 @@ namespace Reparationsunderlag
             this.SupplierTextBox.Name = "SupplierTextBox";
             this.SupplierTextBox.Size = new System.Drawing.Size(200, 21);
             this.SupplierTextBox.TabIndex = 6;
-            this.SupplierTextBox.TextUpdate += new System.EventHandler(this.UpdateReport);
             this.SupplierTextBox.Leave += new System.EventHandler(this.saveToolStripButton_Click);
+            this.SupplierTextBox.Validated += new System.EventHandler(this.UpdateReport);
             // 
             // maskintypTextBox
             // 
@@ -569,6 +569,7 @@ namespace Reparationsunderlag
             this.maskintypTextBox.Name = "maskintypTextBox";
             this.maskintypTextBox.Size = new System.Drawing.Size(200, 20);
             this.maskintypTextBox.TabIndex = 17;
+            this.maskintypTextBox.Validated += new System.EventHandler(this.UpdateReport);
             // 
             // märkeTextBox
             // 
@@ -577,8 +578,8 @@ namespace Reparationsunderlag
             this.märkeTextBox.Name = "märkeTextBox";
             this.märkeTextBox.Size = new System.Drawing.Size(200, 20);
             this.märkeTextBox.TabIndex = 11;
-            this.märkeTextBox.TextChanged += new System.EventHandler(this.UpdateReport);
             this.märkeTextBox.Leave += new System.EventHandler(this.saveToolStripButton_Click);
+            this.märkeTextBox.Validated += new System.EventHandler(this.UpdateReport);
             // 
             // GarantiBox
             // 
@@ -600,8 +601,8 @@ namespace Reparationsunderlag
             this.serienummerTextBox.Name = "serienummerTextBox";
             this.serienummerTextBox.Size = new System.Drawing.Size(200, 20);
             this.serienummerTextBox.TabIndex = 15;
-            this.serienummerTextBox.TextChanged += new System.EventHandler(this.UpdateReport);
             this.serienummerTextBox.Leave += new System.EventHandler(this.saveToolStripButton_Click);
+            this.serienummerTextBox.Validated += new System.EventHandler(this.UpdateReport);
             // 
             // epostTextBox
             // 
@@ -610,8 +611,8 @@ namespace Reparationsunderlag
             this.epostTextBox.Name = "epostTextBox";
             this.epostTextBox.Size = new System.Drawing.Size(200, 20);
             this.epostTextBox.TabIndex = 13;
-            this.epostTextBox.TextChanged += new System.EventHandler(this.UpdateReport);
             this.epostTextBox.Leave += new System.EventHandler(this.saveToolStripButton_Click);
+            this.epostTextBox.Validated += new System.EventHandler(this.UpdateReport);
             // 
             // användareComboBox
             // 
@@ -628,6 +629,7 @@ namespace Reparationsunderlag
             this.användareComboBox.ValueMember = "SALJARE";
             this.användareComboBox.TextChanged += new System.EventHandler(this.UpdateReport);
             this.användareComboBox.Leave += new System.EventHandler(this.saveToolStripButton_Click);
+            this.användareComboBox.Validated += new System.EventHandler(this.UpdateReport);
             // 
             // tSALJAREBindingSource1
             // 
@@ -647,8 +649,8 @@ namespace Reparationsunderlag
             this.felbeskrivningTextBox.Name = "felbeskrivningTextBox";
             this.felbeskrivningTextBox.Size = new System.Drawing.Size(200, 108);
             this.felbeskrivningTextBox.TabIndex = 19;
-            this.felbeskrivningTextBox.TextChanged += new System.EventHandler(this.UpdateReport);
             this.felbeskrivningTextBox.Leave += new System.EventHandler(this.saveToolStripButton_Click);
+            this.felbeskrivningTextBox.Validated += new System.EventHandler(this.UpdateReport);
             // 
             // telefonnummerTextBox
             // 
@@ -657,8 +659,8 @@ namespace Reparationsunderlag
             this.telefonnummerTextBox.Name = "telefonnummerTextBox";
             this.telefonnummerTextBox.Size = new System.Drawing.Size(200, 20);
             this.telefonnummerTextBox.TabIndex = 12;
-            this.telefonnummerTextBox.TextChanged += new System.EventHandler(this.UpdateReport);
             this.telefonnummerTextBox.Leave += new System.EventHandler(this.saveToolStripButton_Click);
+            this.telefonnummerTextBox.Validated += new System.EventHandler(this.UpdateReport);
             // 
             // kundkontaktTextBox
             // 
@@ -667,8 +669,8 @@ namespace Reparationsunderlag
             this.kundkontaktTextBox.Name = "kundkontaktTextBox";
             this.kundkontaktTextBox.Size = new System.Drawing.Size(200, 20);
             this.kundkontaktTextBox.TabIndex = 10;
-            this.kundkontaktTextBox.TextChanged += new System.EventHandler(this.UpdateReport);
             this.kundkontaktTextBox.Leave += new System.EventHandler(this.saveToolStripButton_Click);
+            this.kundkontaktTextBox.Validated += new System.EventHandler(this.UpdateReport);
             // 
             // kundIDTextBox
             // 
@@ -677,8 +679,8 @@ namespace Reparationsunderlag
             this.kundIDTextBox.Name = "kundIDTextBox";
             this.kundIDTextBox.Size = new System.Drawing.Size(200, 20);
             this.kundIDTextBox.TabIndex = 8;
-            this.kundIDTextBox.TextChanged += new System.EventHandler(this.UpdateReport);
             this.kundIDTextBox.Leave += new System.EventHandler(this.saveToolStripButton_Click);
+            this.kundIDTextBox.Validated += new System.EventHandler(this.UpdateReport);
             // 
             // dokumentDatumDateTimePicker
             // 
@@ -689,6 +691,7 @@ namespace Reparationsunderlag
             this.dokumentDatumDateTimePicker.TabIndex = 4;
             this.dokumentDatumDateTimePicker.ValueChanged += new System.EventHandler(this.UpdateReport);
             this.dokumentDatumDateTimePicker.Leave += new System.EventHandler(this.saveToolStripButton_Click);
+            this.dokumentDatumDateTimePicker.Validated += new System.EventHandler(this.UpdateReport);
             // 
             // dokumentIDTextBox
             // 
@@ -826,13 +829,16 @@ namespace Reparationsunderlag
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "Reparationsdataset";
-            reportDataSource1.Value = this.ReparationsunderlagBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Reparationsunderlag.ReparationsUnderlag_Rapport.rdlc";
+            reportDataSource7.Name = "Reparationsdataset";
+            reportDataSource7.Value = this.ReparationsunderlagBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource7);
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote;
+            this.reportViewer1.ServerReport.ReportPath = "/Reparationsunderlag/ReparationsUnderlag_Rapport";
+            this.reportViewer1.ServerReport.ReportServerUrl = new System.Uri("http://192.168.0.117/reportserver", System.UriKind.Absolute);
             this.reportViewer1.ShowContextMenu = false;
+            this.reportViewer1.ShowParameterPrompts = false;
             this.reportViewer1.ShowToolBar = false;
             this.reportViewer1.Size = new System.Drawing.Size(504, 731);
             this.reportViewer1.TabIndex = 0;
