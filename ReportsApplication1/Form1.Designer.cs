@@ -43,21 +43,9 @@ namespace Reparationsunderlag
             System.Windows.Forms.Label serienummerLabel;
             System.Windows.Forms.Label märkeLabel;
             System.Windows.Forms.Label maskintypLabel;
-            System.Windows.Forms.Label artikelnummerLabel;
-            System.Windows.Forms.Label benämningLabel;
-            System.Windows.Forms.Label levartnrLabel;
-            System.Windows.Forms.Label levnrLabel;
-            System.Windows.Forms.Label eANLabel;
-            System.Windows.Forms.Label maskinLabel;
-            System.Windows.Forms.Label inprisLabel;
-            System.Windows.Forms.Label utprisLabel;
-            System.Windows.Forms.Label marginalLabel;
-            System.Windows.Forms.Label varugruppLabel;
-            System.Windows.Forms.Label lagerplatsLabel;
-            System.Windows.Forms.Label marginalkalkylLabel;
             System.Windows.Forms.Label leverantörLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource7 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.ReparationsunderlagBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSet1 = new Reparationsunderlag.DataSet1();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -106,58 +94,8 @@ namespace Reparationsunderlag
             this.serienummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.märkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maskintypDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.artikelnummerTextBox = new System.Windows.Forms.TextBox();
             this.artiklarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kassasystem_DataSet = new Reparationsunderlag.Kassasystem_DataSet();
-            this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem1 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem1 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem1 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem1 = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem1 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem1 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.benämningTextBox = new System.Windows.Forms.TextBox();
-            this.marginalkalkylTextBox = new System.Windows.Forms.TextBox();
-            this.levartnrTextBox = new System.Windows.Forms.TextBox();
-            this.lagerplatsTextBox = new System.Windows.Forms.TextBox();
-            this.levnrTextBox = new System.Windows.Forms.TextBox();
-            this.varugruppTextBox = new System.Windows.Forms.TextBox();
-            this.eANTextBox = new System.Windows.Forms.TextBox();
-            this.marginalTextBox = new System.Windows.Forms.TextBox();
-            this.maskinTextBox = new System.Windows.Forms.TextBox();
-            this.utprisTextBox = new System.Windows.Forms.TextBox();
-            this.inprisTextBox = new System.Windows.Forms.TextBox();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.bindingNavigator3 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
             this.tSALJAREBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ReparationsunderlagTableAdapter = new Reparationsunderlag.DataSet1TableAdapters.ReparationsunderlagTableAdapter();
             this.tableAdapterManager = new Reparationsunderlag.DataSet1TableAdapters.TableAdapterManager();
@@ -197,18 +135,6 @@ namespace Reparationsunderlag
             serienummerLabel = new System.Windows.Forms.Label();
             märkeLabel = new System.Windows.Forms.Label();
             maskintypLabel = new System.Windows.Forms.Label();
-            artikelnummerLabel = new System.Windows.Forms.Label();
-            benämningLabel = new System.Windows.Forms.Label();
-            levartnrLabel = new System.Windows.Forms.Label();
-            levnrLabel = new System.Windows.Forms.Label();
-            eANLabel = new System.Windows.Forms.Label();
-            maskinLabel = new System.Windows.Forms.Label();
-            inprisLabel = new System.Windows.Forms.Label();
-            utprisLabel = new System.Windows.Forms.Label();
-            marginalLabel = new System.Windows.Forms.Label();
-            varugruppLabel = new System.Windows.Forms.Label();
-            lagerplatsLabel = new System.Windows.Forms.Label();
-            marginalkalkylLabel = new System.Windows.Forms.Label();
             leverantörLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ReparationsunderlagBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).BeginInit();
@@ -224,16 +150,8 @@ namespace Reparationsunderlag
             this.bindingNavigator1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            this.tabControl2.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.artiklarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kassasystem_DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
-            this.bindingNavigator2.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).BeginInit();
-            this.bindingNavigator3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tSALJAREBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlagBindingSource1)).BeginInit();
             this.ReportViewerContextMenu.SuspendLayout();
@@ -349,114 +267,6 @@ namespace Reparationsunderlag
             maskintypLabel.TabIndex = 25;
             maskintypLabel.Text = "Maskintyp:";
             // 
-            // artikelnummerLabel
-            // 
-            artikelnummerLabel.AutoSize = true;
-            artikelnummerLabel.Location = new System.Drawing.Point(71, 82);
-            artikelnummerLabel.Name = "artikelnummerLabel";
-            artikelnummerLabel.Size = new System.Drawing.Size(76, 13);
-            artikelnummerLabel.TabIndex = 0;
-            artikelnummerLabel.Text = "Artikelnummer:";
-            // 
-            // benämningLabel
-            // 
-            benämningLabel.AutoSize = true;
-            benämningLabel.Location = new System.Drawing.Point(84, 125);
-            benämningLabel.Name = "benämningLabel";
-            benämningLabel.Size = new System.Drawing.Size(63, 13);
-            benämningLabel.TabIndex = 2;
-            benämningLabel.Text = "Benämning:";
-            // 
-            // levartnrLabel
-            // 
-            levartnrLabel.AutoSize = true;
-            levartnrLabel.Location = new System.Drawing.Point(98, 168);
-            levartnrLabel.Name = "levartnrLabel";
-            levartnrLabel.Size = new System.Drawing.Size(49, 13);
-            levartnrLabel.TabIndex = 4;
-            levartnrLabel.Text = "Levartnr:";
-            // 
-            // levnrLabel
-            // 
-            levnrLabel.AutoSize = true;
-            levnrLabel.Location = new System.Drawing.Point(110, 207);
-            levnrLabel.Name = "levnrLabel";
-            levnrLabel.Size = new System.Drawing.Size(37, 13);
-            levnrLabel.TabIndex = 6;
-            levnrLabel.Text = "Levnr:";
-            // 
-            // eANLabel
-            // 
-            eANLabel.AutoSize = true;
-            eANLabel.Location = new System.Drawing.Point(115, 249);
-            eANLabel.Name = "eANLabel";
-            eANLabel.Size = new System.Drawing.Size(32, 13);
-            eANLabel.TabIndex = 8;
-            eANLabel.Text = "EAN:";
-            // 
-            // maskinLabel
-            // 
-            maskinLabel.AutoSize = true;
-            maskinLabel.Location = new System.Drawing.Point(103, 290);
-            maskinLabel.Name = "maskinLabel";
-            maskinLabel.Size = new System.Drawing.Size(44, 13);
-            maskinLabel.TabIndex = 10;
-            maskinLabel.Text = "Maskin:";
-            // 
-            // inprisLabel
-            // 
-            inprisLabel.AutoSize = true;
-            inprisLabel.Location = new System.Drawing.Point(112, 330);
-            inprisLabel.Name = "inprisLabel";
-            inprisLabel.Size = new System.Drawing.Size(35, 13);
-            inprisLabel.TabIndex = 12;
-            inprisLabel.Text = "Inpris:";
-            // 
-            // utprisLabel
-            // 
-            utprisLabel.AutoSize = true;
-            utprisLabel.Location = new System.Drawing.Point(110, 369);
-            utprisLabel.Name = "utprisLabel";
-            utprisLabel.Size = new System.Drawing.Size(37, 13);
-            utprisLabel.TabIndex = 14;
-            utprisLabel.Text = "Utpris:";
-            // 
-            // marginalLabel
-            // 
-            marginalLabel.AutoSize = true;
-            marginalLabel.Location = new System.Drawing.Point(97, 410);
-            marginalLabel.Name = "marginalLabel";
-            marginalLabel.Size = new System.Drawing.Size(50, 13);
-            marginalLabel.TabIndex = 16;
-            marginalLabel.Text = "Marginal:";
-            // 
-            // varugruppLabel
-            // 
-            varugruppLabel.AutoSize = true;
-            varugruppLabel.Location = new System.Drawing.Point(88, 453);
-            varugruppLabel.Name = "varugruppLabel";
-            varugruppLabel.Size = new System.Drawing.Size(59, 13);
-            varugruppLabel.TabIndex = 18;
-            varugruppLabel.Text = "Varugrupp:";
-            // 
-            // lagerplatsLabel
-            // 
-            lagerplatsLabel.AutoSize = true;
-            lagerplatsLabel.Location = new System.Drawing.Point(88, 496);
-            lagerplatsLabel.Name = "lagerplatsLabel";
-            lagerplatsLabel.Size = new System.Drawing.Size(59, 13);
-            lagerplatsLabel.TabIndex = 20;
-            lagerplatsLabel.Text = "Lagerplats:";
-            // 
-            // marginalkalkylLabel
-            // 
-            marginalkalkylLabel.AutoSize = true;
-            marginalkalkylLabel.Location = new System.Drawing.Point(70, 536);
-            marginalkalkylLabel.Name = "marginalkalkylLabel";
-            marginalkalkylLabel.Size = new System.Drawing.Size(77, 13);
-            marginalkalkylLabel.TabIndex = 22;
-            marginalkalkylLabel.Text = "Marginalkalkyl:";
-            // 
             // leverantörLabel
             // 
             leverantörLabel.AutoSize = true;
@@ -480,7 +290,6 @@ namespace Reparationsunderlag
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.ItemSize = new System.Drawing.Size(82, 25);
             this.tabControl1.Location = new System.Drawing.Point(0, 29);
@@ -829,9 +638,9 @@ namespace Reparationsunderlag
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource7.Name = "Reparationsdataset";
-            reportDataSource7.Value = this.ReparationsunderlagBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource7);
+            reportDataSource1.Name = "Reparationsdataset";
+            reportDataSource1.Value = this.ReparationsunderlagBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote;
@@ -976,70 +785,6 @@ namespace Reparationsunderlag
             this.maskintypDataGridViewTextBoxColumn.Name = "maskintypDataGridViewTextBoxColumn";
             this.maskintypDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.tabControl2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1070, 737);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Produkter(BETA)";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage2);
-            this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl2.Location = new System.Drawing.Point(0, 0);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1070, 737);
-            this.tabControl2.TabIndex = 25;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.artikelnummerTextBox);
-            this.tabPage2.Controls.Add(this.bindingNavigator2);
-            this.tabPage2.Controls.Add(artikelnummerLabel);
-            this.tabPage2.Controls.Add(marginalkalkylLabel);
-            this.tabPage2.Controls.Add(this.benämningTextBox);
-            this.tabPage2.Controls.Add(this.marginalkalkylTextBox);
-            this.tabPage2.Controls.Add(benämningLabel);
-            this.tabPage2.Controls.Add(lagerplatsLabel);
-            this.tabPage2.Controls.Add(this.levartnrTextBox);
-            this.tabPage2.Controls.Add(this.lagerplatsTextBox);
-            this.tabPage2.Controls.Add(levartnrLabel);
-            this.tabPage2.Controls.Add(varugruppLabel);
-            this.tabPage2.Controls.Add(this.levnrTextBox);
-            this.tabPage2.Controls.Add(this.varugruppTextBox);
-            this.tabPage2.Controls.Add(levnrLabel);
-            this.tabPage2.Controls.Add(marginalLabel);
-            this.tabPage2.Controls.Add(this.eANTextBox);
-            this.tabPage2.Controls.Add(this.marginalTextBox);
-            this.tabPage2.Controls.Add(eANLabel);
-            this.tabPage2.Controls.Add(utprisLabel);
-            this.tabPage2.Controls.Add(this.maskinTextBox);
-            this.tabPage2.Controls.Add(this.utprisTextBox);
-            this.tabPage2.Controls.Add(maskinLabel);
-            this.tabPage2.Controls.Add(inprisLabel);
-            this.tabPage2.Controls.Add(this.inprisTextBox);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1062, 711);
-            this.tabPage2.TabIndex = 0;
-            this.tabPage2.Text = "Enkel";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // artikelnummerTextBox
-            // 
-            this.artikelnummerTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.artiklarBindingSource, "Artikelnummer", true));
-            this.artikelnummerTextBox.Location = new System.Drawing.Point(153, 79);
-            this.artikelnummerTextBox.Name = "artikelnummerTextBox";
-            this.artikelnummerTextBox.Size = new System.Drawing.Size(215, 20);
-            this.artikelnummerTextBox.TabIndex = 1;
-            // 
             // artiklarBindingSource
             // 
             this.artiklarBindingSource.DataMember = "Artiklar";
@@ -1049,428 +794,6 @@ namespace Reparationsunderlag
             // 
             this.kassasystem_DataSet.DataSetName = "Kassasystem_DataSet";
             this.kassasystem_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bindingNavigator2
-            // 
-            this.bindingNavigator2.AddNewItem = this.bindingNavigatorAddNewItem1;
-            this.bindingNavigator2.BindingSource = this.artiklarBindingSource;
-            this.bindingNavigator2.CountItem = this.bindingNavigatorCountItem1;
-            this.bindingNavigator2.DeleteItem = this.bindingNavigatorDeleteItem1;
-            this.bindingNavigator2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem1,
-            this.bindingNavigatorMovePreviousItem1,
-            this.bindingNavigatorSeparator3,
-            this.bindingNavigatorPositionItem1,
-            this.bindingNavigatorCountItem1,
-            this.bindingNavigatorSeparator4,
-            this.bindingNavigatorMoveNextItem1,
-            this.bindingNavigatorMoveLastItem1,
-            this.bindingNavigatorSeparator5,
-            this.bindingNavigatorAddNewItem1,
-            this.bindingNavigatorDeleteItem1,
-            this.toolStripButton2,
-            this.toolStripSeparator1,
-            this.toolStripTextBox1,
-            this.toolStripButton1,
-            this.toolStripComboBox1});
-            this.bindingNavigator2.Location = new System.Drawing.Point(3, 3);
-            this.bindingNavigator2.MoveFirstItem = this.bindingNavigatorMoveFirstItem1;
-            this.bindingNavigator2.MoveLastItem = this.bindingNavigatorMoveLastItem1;
-            this.bindingNavigator2.MoveNextItem = this.bindingNavigatorMoveNextItem1;
-            this.bindingNavigator2.MovePreviousItem = this.bindingNavigatorMovePreviousItem1;
-            this.bindingNavigator2.Name = "bindingNavigator2";
-            this.bindingNavigator2.PositionItem = this.bindingNavigatorPositionItem1;
-            this.bindingNavigator2.Size = new System.Drawing.Size(1056, 25);
-            this.bindingNavigator2.TabIndex = 24;
-            this.bindingNavigator2.Text = "bindingNavigator2";
-            // 
-            // bindingNavigatorAddNewItem1
-            // 
-            this.bindingNavigatorAddNewItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem1.Image")));
-            this.bindingNavigatorAddNewItem1.Name = "bindingNavigatorAddNewItem1";
-            this.bindingNavigatorAddNewItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem1.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem1.Text = "Add new";
-            // 
-            // bindingNavigatorCountItem1
-            // 
-            this.bindingNavigatorCountItem1.Name = "bindingNavigatorCountItem1";
-            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem1.Text = "of {0}";
-            this.bindingNavigatorCountItem1.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem1
-            // 
-            this.bindingNavigatorDeleteItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem1.Image")));
-            this.bindingNavigatorDeleteItem1.Name = "bindingNavigatorDeleteItem1";
-            this.bindingNavigatorDeleteItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem1.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem1.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem1
-            // 
-            this.bindingNavigatorMoveFirstItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem1.Image")));
-            this.bindingNavigatorMoveFirstItem1.Name = "bindingNavigatorMoveFirstItem1";
-            this.bindingNavigatorMoveFirstItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem1.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem1.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem1
-            // 
-            this.bindingNavigatorMovePreviousItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem1.Image")));
-            this.bindingNavigatorMovePreviousItem1.Name = "bindingNavigatorMovePreviousItem1";
-            this.bindingNavigatorMovePreviousItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem1.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem1.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator3
-            // 
-            this.bindingNavigatorSeparator3.Name = "bindingNavigatorSeparator3";
-            this.bindingNavigatorSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem1
-            // 
-            this.bindingNavigatorPositionItem1.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem1.AutoSize = false;
-            this.bindingNavigatorPositionItem1.Name = "bindingNavigatorPositionItem1";
-            this.bindingNavigatorPositionItem1.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem1.Text = "0";
-            this.bindingNavigatorPositionItem1.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator4
-            // 
-            this.bindingNavigatorSeparator4.Name = "bindingNavigatorSeparator4";
-            this.bindingNavigatorSeparator4.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem1
-            // 
-            this.bindingNavigatorMoveNextItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem1.Image")));
-            this.bindingNavigatorMoveNextItem1.Name = "bindingNavigatorMoveNextItem1";
-            this.bindingNavigatorMoveNextItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem1.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem1.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem1
-            // 
-            this.bindingNavigatorMoveLastItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem1.Image")));
-            this.bindingNavigatorMoveLastItem1.Name = "bindingNavigatorMoveLastItem1";
-            this.bindingNavigatorMoveLastItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem1.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem1.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator5
-            // 
-            this.bindingNavigatorSeparator5.Name = "bindingNavigatorSeparator5";
-            this.bindingNavigatorSeparator5.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(85, 22);
-            this.toolStripButton2.Text = "Spara produkt";
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripTextBox1
-            // 
-            this.toolStripTextBox1.AcceptsReturn = true;
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(30, 22);
-            this.toolStripButton1.Text = "Sök";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripTextBox1_Validated);
-            // 
-            // toolStripComboBox1
-            // 
-            this.toolStripComboBox1.Items.AddRange(new object[] {
-            "Artikelnummer",
-            "Benämning",
-            "Leverantörens artikelnummer",
-            "Leverantörsnummer",
-            "EAN",
-            "Varugrupp",
-            "Lagerplats"});
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(170, 25);
-            // 
-            // benämningTextBox
-            // 
-            this.benämningTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.artiklarBindingSource, "Benämning", true));
-            this.benämningTextBox.Location = new System.Drawing.Point(153, 122);
-            this.benämningTextBox.Name = "benämningTextBox";
-            this.benämningTextBox.Size = new System.Drawing.Size(215, 20);
-            this.benämningTextBox.TabIndex = 3;
-            // 
-            // marginalkalkylTextBox
-            // 
-            this.marginalkalkylTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.artiklarBindingSource, "Marginalkalkyl", true));
-            this.marginalkalkylTextBox.Location = new System.Drawing.Point(153, 533);
-            this.marginalkalkylTextBox.Name = "marginalkalkylTextBox";
-            this.marginalkalkylTextBox.Size = new System.Drawing.Size(215, 20);
-            this.marginalkalkylTextBox.TabIndex = 23;
-            // 
-            // levartnrTextBox
-            // 
-            this.levartnrTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.artiklarBindingSource, "Levartnr", true));
-            this.levartnrTextBox.Location = new System.Drawing.Point(153, 165);
-            this.levartnrTextBox.Name = "levartnrTextBox";
-            this.levartnrTextBox.Size = new System.Drawing.Size(215, 20);
-            this.levartnrTextBox.TabIndex = 5;
-            // 
-            // lagerplatsTextBox
-            // 
-            this.lagerplatsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.artiklarBindingSource, "Lagerplats", true));
-            this.lagerplatsTextBox.Location = new System.Drawing.Point(153, 493);
-            this.lagerplatsTextBox.Name = "lagerplatsTextBox";
-            this.lagerplatsTextBox.Size = new System.Drawing.Size(215, 20);
-            this.lagerplatsTextBox.TabIndex = 21;
-            // 
-            // levnrTextBox
-            // 
-            this.levnrTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.artiklarBindingSource, "Levnr", true));
-            this.levnrTextBox.Location = new System.Drawing.Point(153, 204);
-            this.levnrTextBox.Name = "levnrTextBox";
-            this.levnrTextBox.Size = new System.Drawing.Size(215, 20);
-            this.levnrTextBox.TabIndex = 7;
-            // 
-            // varugruppTextBox
-            // 
-            this.varugruppTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.artiklarBindingSource, "Varugrupp", true));
-            this.varugruppTextBox.Location = new System.Drawing.Point(153, 450);
-            this.varugruppTextBox.Name = "varugruppTextBox";
-            this.varugruppTextBox.Size = new System.Drawing.Size(215, 20);
-            this.varugruppTextBox.TabIndex = 19;
-            // 
-            // eANTextBox
-            // 
-            this.eANTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.artiklarBindingSource, "EAN", true));
-            this.eANTextBox.Location = new System.Drawing.Point(153, 246);
-            this.eANTextBox.Name = "eANTextBox";
-            this.eANTextBox.Size = new System.Drawing.Size(215, 20);
-            this.eANTextBox.TabIndex = 9;
-            // 
-            // marginalTextBox
-            // 
-            this.marginalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.artiklarBindingSource, "Marginal", true));
-            this.marginalTextBox.Location = new System.Drawing.Point(153, 407);
-            this.marginalTextBox.Name = "marginalTextBox";
-            this.marginalTextBox.Size = new System.Drawing.Size(215, 20);
-            this.marginalTextBox.TabIndex = 17;
-            // 
-            // maskinTextBox
-            // 
-            this.maskinTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.artiklarBindingSource, "Maskin", true));
-            this.maskinTextBox.Location = new System.Drawing.Point(153, 287);
-            this.maskinTextBox.Name = "maskinTextBox";
-            this.maskinTextBox.Size = new System.Drawing.Size(215, 20);
-            this.maskinTextBox.TabIndex = 11;
-            // 
-            // utprisTextBox
-            // 
-            this.utprisTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.artiklarBindingSource, "Utpris", true));
-            this.utprisTextBox.Location = new System.Drawing.Point(153, 366);
-            this.utprisTextBox.Name = "utprisTextBox";
-            this.utprisTextBox.Size = new System.Drawing.Size(215, 20);
-            this.utprisTextBox.TabIndex = 15;
-            // 
-            // inprisTextBox
-            // 
-            this.inprisTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.artiklarBindingSource, "Inpris", true));
-            this.inprisTextBox.Location = new System.Drawing.Point(153, 327);
-            this.inprisTextBox.Name = "inprisTextBox";
-            this.inprisTextBox.Size = new System.Drawing.Size(215, 20);
-            this.inprisTextBox.TabIndex = 13;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.bindingNavigator3);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1062, 711);
-            this.tabPage5.TabIndex = 1;
-            this.tabPage5.Text = "Avancerat";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // bindingNavigator3
-            // 
-            this.bindingNavigator3.AddNewItem = this.toolStripButton3;
-            this.bindingNavigator3.BindingSource = this.artiklarBindingSource;
-            this.bindingNavigator3.CountItem = this.toolStripLabel1;
-            this.bindingNavigator3.DeleteItem = this.toolStripButton4;
-            this.bindingNavigator3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton5,
-            this.toolStripButton6,
-            this.toolStripSeparator2,
-            this.toolStripTextBox2,
-            this.toolStripLabel1,
-            this.toolStripSeparator3,
-            this.toolStripButton7,
-            this.toolStripButton8,
-            this.toolStripSeparator4,
-            this.toolStripButton3,
-            this.toolStripButton4,
-            this.toolStripButton9,
-            this.toolStripSeparator5,
-            this.toolStripTextBox3,
-            this.toolStripButton10,
-            this.toolStripComboBox2});
-            this.bindingNavigator3.Location = new System.Drawing.Point(3, 3);
-            this.bindingNavigator3.MoveFirstItem = this.toolStripButton5;
-            this.bindingNavigator3.MoveLastItem = this.toolStripButton8;
-            this.bindingNavigator3.MoveNextItem = this.toolStripButton7;
-            this.bindingNavigator3.MovePreviousItem = this.toolStripButton6;
-            this.bindingNavigator3.Name = "bindingNavigator3";
-            this.bindingNavigator3.PositionItem = this.toolStripTextBox2;
-            this.bindingNavigator3.Size = new System.Drawing.Size(1056, 25);
-            this.bindingNavigator3.TabIndex = 25;
-            this.bindingNavigator3.Text = "bindingNavigator3";
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton3.Text = "Add new";
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(35, 22);
-            this.toolStripLabel1.Text = "of {0}";
-            this.toolStripLabel1.ToolTipText = "Total number of items";
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton4.Text = "Delete";
-            // 
-            // toolStripButton5
-            // 
-            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton5.Text = "Move first";
-            // 
-            // toolStripButton6
-            // 
-            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton6.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton6.Text = "Move previous";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripTextBox2
-            // 
-            this.toolStripTextBox2.AccessibleName = "Position";
-            this.toolStripTextBox2.AutoSize = false;
-            this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(50, 23);
-            this.toolStripTextBox2.Text = "0";
-            this.toolStripTextBox2.ToolTipText = "Current position";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripButton7
-            // 
-            this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
-            this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton7.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton7.Text = "Move next";
-            // 
-            // toolStripButton8
-            // 
-            this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
-            this.toolStripButton8.Name = "toolStripButton8";
-            this.toolStripButton8.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton8.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton8.Text = "Move last";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripButton9
-            // 
-            this.toolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
-            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(85, 22);
-            this.toolStripButton9.Text = "Spara produkt";
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripTextBox3
-            // 
-            this.toolStripTextBox3.Name = "toolStripTextBox3";
-            this.toolStripTextBox3.Size = new System.Drawing.Size(100, 25);
-            // 
-            // toolStripButton10
-            // 
-            this.toolStripButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
-            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton10.Name = "toolStripButton10";
-            this.toolStripButton10.Size = new System.Drawing.Size(30, 22);
-            this.toolStripButton10.Text = "Sök";
-            // 
-            // toolStripComboBox2
-            // 
-            this.toolStripComboBox2.Items.AddRange(new object[] {
-            "Artikelnummer",
-            "Benämning",
-            "Leverantörens artikelnummer",
-            "Leverantörsnummer",
-            "EAN",
-            "Varugrupp",
-            "Lagerplats"});
-            this.toolStripComboBox2.Name = "toolStripComboBox2";
-            this.toolStripComboBox2.Size = new System.Drawing.Size(170, 25);
             // 
             // tSALJAREBindingSource
             // 
@@ -1574,9 +897,9 @@ namespace Reparationsunderlag
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(458, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 21);
+            this.label1.Size = new System.Drawing.Size(202, 21);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Reparationsunderlag";
+            this.label1.Text = "Reparationsunderlag - TEST";
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseDown);
             this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseMove);
             this.label1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseUp);
@@ -1660,6 +983,7 @@ namespace Reparationsunderlag
             this.omToolStripMenuItem.Name = "omToolStripMenuItem";
             this.omToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
             this.omToolStripMenuItem.Text = "Fixa kontantinloggning";
+            this.omToolStripMenuItem.Visible = false;
             this.omToolStripMenuItem.Click += new System.EventHandler(this.omToolStripMenuItem_Click);
             // 
             // avslutaToolStripMenuItem
@@ -1730,20 +1054,8 @@ namespace Reparationsunderlag
             this.bindingNavigator1.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabControl2.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.artiklarBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kassasystem_DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
-            this.bindingNavigator2.ResumeLayout(false);
-            this.bindingNavigator2.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).EndInit();
-            this.bindingNavigator3.ResumeLayout(false);
-            this.bindingNavigator3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tSALJAREBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlagBindingSource1)).EndInit();
             this.ReportViewerContextMenu.ResumeLayout(false);
@@ -1811,37 +1123,10 @@ namespace Reparationsunderlag
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ToolStripMenuItem skrivUtToolStripMenuItem1;
-        private System.Windows.Forms.TabPage tabPage3;
         private Kassasystem_DataSet kassasystem_DataSet;
         private System.Windows.Forms.BindingSource artiklarBindingSource;
         private Kassasystem_DataSetTableAdapters.ArtiklarTableAdapter artiklarTableAdapter;
         private Kassasystem_DataSetTableAdapters.TableAdapterManager tableAdapterManager1;
-        private System.Windows.Forms.TextBox marginalkalkylTextBox;
-        private System.Windows.Forms.TextBox lagerplatsTextBox;
-        private System.Windows.Forms.TextBox varugruppTextBox;
-        private System.Windows.Forms.TextBox marginalTextBox;
-        private System.Windows.Forms.TextBox utprisTextBox;
-        private System.Windows.Forms.TextBox inprisTextBox;
-        private System.Windows.Forms.TextBox maskinTextBox;
-        private System.Windows.Forms.TextBox eANTextBox;
-        private System.Windows.Forms.TextBox levnrTextBox;
-        private System.Windows.Forms.TextBox levartnrTextBox;
-        private System.Windows.Forms.TextBox benämningTextBox;
-        private System.Windows.Forms.TextBox artikelnummerTextBox;
-        private System.Windows.Forms.BindingNavigator bindingNavigator2;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem1;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem1;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator3;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem1;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator4;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem1;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator5;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dokumentIDDataGridViewTextBoxColumn;
@@ -1857,32 +1142,9 @@ namespace Reparationsunderlag
         private System.Windows.Forms.DataGridViewTextBoxColumn serienummerDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn märkeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn maskintypDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ComboBox SupplierTextBox;
         private System.ServiceProcess.ServiceController serviceController1;
         private System.ServiceProcess.ServiceController serviceController2;
-        private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.BindingNavigator bindingNavigator3;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
-        private System.Windows.Forms.ToolStripButton toolStripButton6;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripButton toolStripButton7;
-        private System.Windows.Forms.ToolStripButton toolStripButton8;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripButton toolStripButton9;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox3;
-        private System.Windows.Forms.ToolStripButton toolStripButton10;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox2;
         private System.Windows.Forms.NotifyIcon notifyIcon2;
     }
 }

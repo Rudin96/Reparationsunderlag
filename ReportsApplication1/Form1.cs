@@ -361,13 +361,13 @@ namespace Reparationsunderlag
             
         }
 
-        private void toolStripTextBox1_Validated(object sender, EventArgs e)
+        /*private void toolStripTextBox1_Validated(object sender, EventArgs e)
         {
             artiklarTableAdapter.Adapter.SelectCommand.CommandText = "SELECT Artikelnummer, Benämning, Levartnr, Levnr, EAN, Maskin, Inpris, Utpris, Marginal, Varugrupp, Lagerplats, Marginalkalkyl FROM dbo.Artiklar Where Artikelnummer LIKE '%" + toolStripTextBox1.Text + "%' OR BENÄMNING LIKE '%" + toolStripTextBox1.Text + "%' OR Levartnr LIKE '%" + toolStripTextBox1.Text + "%' OR EAN LIKE '%" + toolStripTextBox1.Text + "%'";
 
 
             this.artiklarTableAdapter.Fill(this.kassasystem_DataSet.Artiklar);
-        }
+        }*/
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {

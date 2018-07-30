@@ -9,10 +9,10 @@
     <RootNamespace>Reparationsunderlag</RootNamespace>
     <AssemblyName>Reparationsunderlag</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>ftp://ftpcluster.loopia.se/Reparationsunderlag_Files/</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\192.168.0.117\Data\Reparationsunderlag_Installfolder_Beta\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Web</InstallFrom>
+    <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -20,14 +20,14 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://test.sandbergsjarn.se/Reparationsunderlag_Files/</InstallUrl>
-    <ProductName>Reparationsunderlag</ProductName>
+    <InstallUrl>\\192.168.0.117\Data\Reparationsunderlag_Installfolder_Beta\</InstallUrl>
+    <ProductName>Reparationsunderlag - TEST</ProductName>
     <PublisherName>Sandbergs Järn</PublisherName>
     <MinimumRequiredVersion>0.5.1.127</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>25</ApplicationRevision>
-    <ApplicationVersion>1.4.3.%2a</ApplicationVersion>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.6.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -55,21 +55,24 @@
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>6005183BF58B525A50A8FC6DEC52D75D97E48F6E</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>C875CF4BF872745F05764A0ADCF451AFF3BADEE1</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ReportsApplication1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>Reparationsunderlag_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Wrenchicon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
