@@ -7,7 +7,7 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Reparationsunderlag.exe.manifest" size="5979">
+    <dependentAssembly dependencyType="install" codebase="Application Files\Reparationsunderlag_1_7_2_2\Reparationsunderlag.exe.manifest" size="5979">
       <assemblyIdentity name="Reparationsunderlag.exe" version="1.7.2.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>

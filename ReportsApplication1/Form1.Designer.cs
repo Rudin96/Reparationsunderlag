@@ -45,7 +45,7 @@ namespace Reparationsunderlag
             System.Windows.Forms.Label maskintypLabel;
             System.Windows.Forms.Label leverantörLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.ReparationsunderlagBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSet1 = new Reparationsunderlag.DataSet1();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -638,9 +638,9 @@ namespace Reparationsunderlag
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "Reparationsdataset";
-            reportDataSource1.Value = this.ReparationsunderlagBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "Reparationsdataset";
+            reportDataSource2.Value = this.ReparationsunderlagBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote;
@@ -895,11 +895,11 @@ namespace Reparationsunderlag
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(458, 4);
+            this.label1.Location = new System.Drawing.Point(479, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 21);
+            this.label1.Size = new System.Drawing.Size(155, 21);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Reparationsunderlag - TEST";
+            this.label1.Text = "Reparationsunderlag";
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseDown);
             this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseMove);
             this.label1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseUp);
