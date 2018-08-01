@@ -40,9 +40,11 @@ namespace Reparationsunderlag
             }
             else
             {
-                this.Hide();
-                Form1 newfrm = new Form1();
-                newfrm.Show();
+                //this.Hide();
+                //Form1 newfrm = new Form1();
+                //newfrm.t_SALJARETableAdapter.Fill(newfrm.pengvinDataset.T_SALJARE);
+                //newfrm.ReparationsunderlagTableAdapter.Fill(newfrm.DataSet1.Reparationsunderlag);
+                //newfrm.Show();
             }
         }
 
@@ -100,9 +102,14 @@ namespace Reparationsunderlag
             }
             else
             {
-                this.Hide();
-                Form1 newfrm = new Form1();
-                newfrm.Show();
+                //this.Hide();
+                //Form1 newfrm = new Form1();
+                //newfrm.t_SALJARETableAdapter.Fill(newfrm.pengvinDataset.T_SALJARE);
+                //newfrm.ReparationsunderlagTableAdapter.Fill(newfrm.DataSet1.Reparationsunderlag);
+                //newfrm.Show();
+
+                backgroundWorker1.RunWorkerAsync();
+                
 
 
             }
@@ -150,7 +157,7 @@ namespace Reparationsunderlag
         private void Splashscreen_Load(object sender, EventArgs e)
         {
             UpdateApplication();
-            
+
             /*UpdateCheckInfo info = null;      
             
 
@@ -224,6 +231,56 @@ namespace Reparationsunderlag
             Form1 newfrm = new Form1();
             newfrm.Show();
             this.Hide();*/
+        }
+
+        
+        Form1 newfrm = new Form1();
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            label3.Text = "Laddar Tabell 1/2";
+            newfrm.t_SALJARETableAdapter.Fill(newfrm.pengvinDataset.T_SALJARE);
+        }
+
+        private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
+        {
+            label3.Text = "Laddar Tabell 2/2";
+            newfrm.ReparationsunderlagTableAdapter.Fill(newfrm.DataSet1.Reparationsunderlag);
+        }
+
+        bool Worker1Complete = false;
+        bool Worker2Complete = false;
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            Worker1Complete = true;
+
+            if (Worker1Complete && Worker2Complete)
+            {
+
+                newfrm.Show();
+                this.Hide();
+
+            }
+            else
+            {
+
+                backgroundWorker2.RunWorkerAsync();
+
+            }
+        }
+
+        private void backgroundWorker2_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            Worker2Complete = true;
+
+            if (Worker1Complete && Worker2Complete)
+            {
+                label3.Text = "Startar Programmet";
+                newfrm.Show();
+                this.Hide();
+
+            }
         }
     }
 }

@@ -25,9 +25,9 @@ namespace Reparationsunderlag
             if (Inställningar.Default.bHasSeenNotes == true)
             {
 
-                this.t_SALJARETableAdapter.Fill(pengvinDataset.T_SALJARE);
+                //this.t_SALJARETableAdapter.Fill(pengvinDataset.T_SALJARE);
 
-                this.ReparationsunderlagTableAdapter.Fill(DataSet1.Reparationsunderlag);
+                //this.ReparationsunderlagTableAdapter.Fill(DataSet1.Reparationsunderlag);
 
                 //this.artiklarTableAdapter.Fill(this.kassasystem_DataSet.Artiklar);
 
@@ -84,9 +84,9 @@ namespace Reparationsunderlag
             } else if (Inställningar.Default.bHasSeenNotes == false)
             {
 
-                this.t_SALJARETableAdapter.Fill(this.pengvinDataset.T_SALJARE);
+                //this.t_SALJARETableAdapter.Fill(this.pengvinDataset.T_SALJARE);
 
-                this.ReparationsunderlagTableAdapter.Fill(this.DataSet1.Reparationsunderlag);
+               // this.ReparationsunderlagTableAdapter.Fill(this.DataSet1.Reparationsunderlag);
 
 
 

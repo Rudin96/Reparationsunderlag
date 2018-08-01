@@ -73,6 +73,16 @@ namespace Reparationsunderlag.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Eclipse_1_4s_200px {
+            get {
+                object obj = ResourceManager.GetObject("Eclipse_1_4s_200px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logga_v1 {
             get {
                 object obj = ResourceManager.GetObject("Logga_v1", resourceCulture);

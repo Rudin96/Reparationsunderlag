@@ -1074,8 +1074,6 @@ namespace Reparationsunderlag
         private System.Windows.Forms.SplitContainer splitContainer1;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource ReparationsunderlagBindingSource;
-        private DataSet1 DataSet1;
-        private DataSet1TableAdapters.ReparationsunderlagTableAdapter ReparationsunderlagTableAdapter;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -1097,9 +1095,7 @@ namespace Reparationsunderlag
         private System.Windows.Forms.DateTimePicker dokumentDatumDateTimePicker;
         private System.Windows.Forms.TextBox dokumentIDTextBox;
         private DataSet1TableAdapters.TableAdapterManager tableAdapterManager;
-        private PengvinDataset pengvinDataset;
         private System.Windows.Forms.BindingSource tSALJAREBindingSource;
-        private PengvinDatasetTableAdapters.T_SALJARETableAdapter t_SALJARETableAdapter;
         private System.Windows.Forms.CheckBox GarantiBox;
         private System.Windows.Forms.BindingSource tSALJAREBindingSource1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
@@ -1146,5 +1142,9 @@ namespace Reparationsunderlag
         private System.ServiceProcess.ServiceController serviceController1;
         private System.ServiceProcess.ServiceController serviceController2;
         private System.Windows.Forms.NotifyIcon notifyIcon2;
+        public DataSet1TableAdapters.ReparationsunderlagTableAdapter ReparationsunderlagTableAdapter;
+        public PengvinDatasetTableAdapters.T_SALJARETableAdapter t_SALJARETableAdapter;
+        public DataSet1 DataSet1;
+        public PengvinDataset pengvinDataset;
     }
 }

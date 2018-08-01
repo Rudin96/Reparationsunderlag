@@ -26,8 +26,8 @@
     <MinimumRequiredVersion>0.5.1.127</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>3</ApplicationRevision>
-    <ApplicationVersion>1.6.1.%2a</ApplicationVersion>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.8.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -235,6 +235,7 @@
     <None Include="Resources\BG_Image.png" />
     <None Include="Resources\Logga_v1.png" />
     <None Include="Resources\sandbergs-logo-e1456731172110.png" />
+    <None Include="Resources\Eclipse-1.4s-200px.gif" />
     <Content Include="Wrenchicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
