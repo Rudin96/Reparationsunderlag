@@ -40,11 +40,12 @@ namespace Reparationsunderlag
             }
             else
             {
-                //this.Hide();
+                this.Hide();
                 //Form1 newfrm = new Form1();
-                //newfrm.t_SALJARETableAdapter.Fill(newfrm.pengvinDataset.T_SALJARE);
-                //newfrm.ReparationsunderlagTableAdapter.Fill(newfrm.DataSet1.Reparationsunderlag);
-                //newfrm.Show();
+                newfrm.t_SALJARETableAdapter.Fill(newfrm.pengvinDataset.T_SALJARE);
+                newfrm.ReparationsunderlagTableAdapter.Fill(newfrm.DataSet1.Reparationsunderlag);
+                newfrm.Show();
+                //backgroundWorker1.RunWorkerAsync();
             }
         }
 

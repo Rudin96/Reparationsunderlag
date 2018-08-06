@@ -94,13 +94,13 @@ namespace Reparationsunderlag
             this.serienummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.märkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maskintypDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reparationsunderlagBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.artiklarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kassasystem_DataSet = new Reparationsunderlag.Kassasystem_DataSet();
             this.tSALJAREBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ReparationsunderlagTableAdapter = new Reparationsunderlag.DataSet1TableAdapters.ReparationsunderlagTableAdapter();
             this.tableAdapterManager = new Reparationsunderlag.DataSet1TableAdapters.TableAdapterManager();
             this.t_SALJARETableAdapter = new Reparationsunderlag.PengvinDatasetTableAdapters.T_SALJARETableAdapter();
-            this.reparationsunderlagBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.reparationsunderlag_UrvalTableAdapter = new Reparationsunderlag.DataSet1TableAdapters.Reparationsunderlag_UrvalTableAdapter();
             this.ReportViewerContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.skrivUtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -150,10 +150,10 @@ namespace Reparationsunderlag
             this.bindingNavigator1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlagBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.artiklarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kassasystem_DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tSALJAREBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlagBindingSource1)).BeginInit();
             this.ReportViewerContextMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -785,6 +785,12 @@ namespace Reparationsunderlag
             this.maskintypDataGridViewTextBoxColumn.Name = "maskintypDataGridViewTextBoxColumn";
             this.maskintypDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // reparationsunderlagBindingSource1
+            // 
+            this.reparationsunderlagBindingSource1.DataMember = "Reparationsunderlag";
+            this.reparationsunderlagBindingSource1.DataSource = this.DataSet1;
+            this.reparationsunderlagBindingSource1.CurrentChanged += new System.EventHandler(this.reparationsunderlagBindingSource1_CurrentChanged);
+            // 
             // artiklarBindingSource
             // 
             this.artiklarBindingSource.DataMember = "Artiklar";
@@ -815,11 +821,6 @@ namespace Reparationsunderlag
             // t_SALJARETableAdapter
             // 
             this.t_SALJARETableAdapter.ClearBeforeFill = true;
-            // 
-            // reparationsunderlagBindingSource1
-            // 
-            this.reparationsunderlagBindingSource1.DataMember = "Reparationsunderlag";
-            this.reparationsunderlagBindingSource1.DataSource = this.DataSet1;
             // 
             // reparationsunderlag_UrvalTableAdapter
             // 
@@ -1054,10 +1055,10 @@ namespace Reparationsunderlag
             this.bindingNavigator1.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlagBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.artiklarBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kassasystem_DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tSALJAREBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlagBindingSource1)).EndInit();
             this.ReportViewerContextMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

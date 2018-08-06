@@ -275,7 +275,7 @@ namespace Reparationsunderlag
             else
             {
 
-                this.Validate();
+                //this.Validate();
                 this.ReparationsunderlagBindingSource.EndEdit();
                 this.tableAdapterManager.UpdateAll(this.DataSet1);
                 reportViewer1.PrinterSettings.Copies = 2;
@@ -376,6 +376,9 @@ namespace Reparationsunderlag
             this.tableAdapterManager1.UpdateAll(this.kassasystem_DataSet);
         }
 
-        
+        private void reparationsunderlagBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
