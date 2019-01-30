@@ -48,5 +48,11 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=192.168.0.117;Initial Catalog=PENGVIN_DATA01;Persist Security Info=True;User ID=sa;Password=S4ndb3rgsj4rn</Value>
     </Setting>
+    <Setting Name="ReportViewerURL" Type="(Web Service URL)" Scope="User">
+      <Value Profile="(Default)">(http://hemmaserver/reportserver)</Value>
+    </Setting>
+    <Setting Name="ReportViewerServerPath" Type="System.Char" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

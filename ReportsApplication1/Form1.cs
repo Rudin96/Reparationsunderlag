@@ -20,6 +20,9 @@ namespace Reparationsunderlag
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'kassasystem_DataSet.Artiklar' table. You can move, or remove it, as needed.
+
+            reportViewer1.ServerReport.ReportPath = Properties.Settings.Default.ReportViewerServerPath;
+            reportViewer1.ServerReport.ReportServerUrl = Properties.Settings.Default.ReportViewerURL;
             
 
             if (Inställningar.Default.bHasSeenNotes == true)

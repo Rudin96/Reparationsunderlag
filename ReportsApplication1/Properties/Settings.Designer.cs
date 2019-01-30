@@ -12,7 +12,7 @@ namespace Reparationsunderlag.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.7.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
     public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -94,6 +94,30 @@ namespace Reparationsunderlag.Properties {
         public string PENGVIN_DATA01ConnectionString {
             get {
                 return ((string)(this["PENGVIN_DATA01ConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("(http://hemmaserver/reportserver)")]
+        public string ReportViewerURL {
+            get {
+                return ((string)(this["ReportViewerURL"]));
+            }
+            set {
+                this["ReportViewerURL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char ReportViewerServerPath {
+            get {
+                return ((char)(this["ReportViewerServerPath"]));
+            }
+            set {
+                this["ReportViewerServerPath"] = value;
             }
         }
     }

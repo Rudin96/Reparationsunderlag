@@ -644,8 +644,7 @@ namespace Reparationsunderlag
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote;
-            this.reportViewer1.ServerReport.ReportPath = "/Reparationsunderlag/ReparationsUnderlag_Rapport";
-            this.reportViewer1.ServerReport.ReportServerUrl = new System.Uri("http://192.168.0.117/reportserver", System.UriKind.Absolute);
+            this.reportViewer1.ServerReport.ReportServerUrl = new System.Uri("", System.UriKind.Relative);
             this.reportViewer1.ServerReport.Timeout = -1;
             this.reportViewer1.ShowContextMenu = false;
             this.reportViewer1.ShowParameterPrompts = false;
