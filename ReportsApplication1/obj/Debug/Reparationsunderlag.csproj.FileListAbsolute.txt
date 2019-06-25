@@ -175,17 +175,6 @@ C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Deb
 C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\Reparationsunderlag.application
 C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\Reparationsunderlag.exe
 C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\Reparationsunderlag.pdb
-C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\Microsoft.SqlServer.Types.dll
-C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
-C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
-C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
-C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
-C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
-C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
-C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
-C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
-C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
-C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
 C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.csprojAssemblyReference.cache
 C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.AboutForm.resources
 C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.ChangelogForm.resources
@@ -196,6 +185,5 @@ C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Deb
 C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.csproj.CoreCompileInputs.cache
 C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.exe.manifest
 C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.application
-C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.csproj.CopyComplete
 C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.exe
 C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.pdb

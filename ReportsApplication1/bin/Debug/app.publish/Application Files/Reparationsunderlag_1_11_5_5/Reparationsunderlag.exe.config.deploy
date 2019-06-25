@@ -49,6 +49,12 @@
       <setting name="bHasReadNotes" serializeAs="String">
         <value>False</value>
       </setting>
+      <setting name="ReportViewerURL" serializeAs="String">
+        <value>(http://hemmaserver/reportserver)</value>
+      </setting>
+      <setting name="ReportViewerServerPath" serializeAs="String">
+        <value />
+      </setting>
     </Reparationsunderlag.Properties.Settings>
   </userSettings>
 </configuration>

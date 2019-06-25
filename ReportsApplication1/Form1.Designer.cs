@@ -644,7 +644,8 @@ namespace Reparationsunderlag
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote;
-            this.reportViewer1.ServerReport.ReportServerUrl = new System.Uri("", System.UriKind.Relative);
+            this.reportViewer1.ServerReport.DisplayName = "Reparationsunderlag_Rapport.rdl";
+            this.reportViewer1.ServerReport.ReportServerUrl = new System.Uri("(http://192.168.0.117/reportserver)", System.UriKind.Relative);
             this.reportViewer1.ServerReport.Timeout = -1;
             this.reportViewer1.ShowContextMenu = false;
             this.reportViewer1.ShowParameterPrompts = false;
@@ -654,6 +655,7 @@ namespace Reparationsunderlag
             this.reportViewer1.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
             this.reportViewer1.Print += new Microsoft.Reporting.WinForms.ReportPrintEventHandler(this.reportViewer1_SendPrintInfo);
             this.reportViewer1.PrintingBegin += new Microsoft.Reporting.WinForms.ReportPrintEventHandler(this.reportViewer1_SendPrintInfo);
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // tabPage4
             // 
@@ -896,11 +898,11 @@ namespace Reparationsunderlag
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(458, 4);
+            this.label1.Location = new System.Drawing.Point(492, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 21);
+            this.label1.Size = new System.Drawing.Size(155, 21);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Reparationsunderlag - TEST";
+            this.label1.Text = "Reparationsunderlag";
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseDown);
             this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseMove);
             this.label1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseUp);
