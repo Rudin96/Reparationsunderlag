@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>\\192.168.0.117\Data\Reparationsunderlag_Installfolder\|\\192.168.0.117\Data\Reparationsunderlag_Installfolder_Beta\|ftp://ftpcluster.loopia.se/Reparationsunderlag_Files/|ftp://192.168.0.10/Reparationsunderlag_Files/|\\SERVER2\SandbergsDeladeFiler\PublishLocation\Reparationsunderlag_Beta1\</PublishUrlHistory>
-    <InstallUrlHistory>\\192.168.0.117\Data\Reparationsunderlag_Installfolder\|\\192.168.0.117\Data\Reparationsunderlag_Installfolder_Beta\|http://test.sandbergsjarn.se/Reparationsunderlag_Files/|http://192.168.0.10/Reparationsunderlag_Files/|http://ftpcluster.loopia.se:80/Reparationsunderlag_Files/</InstallUrlHistory>
+    <PublishUrlHistory>\\HEMMASERVER\Data\Reparationsunderlag_Installfolder\|\\192.168.0.117\Data\Reparationsunderlag_Installfolder\|\\192.168.0.117\Data\Reparationsunderlag_Installfolder_Beta\|ftp://ftpcluster.loopia.se/Reparationsunderlag_Files/|ftp://192.168.0.10/Reparationsunderlag_Files/</PublishUrlHistory>
+    <InstallUrlHistory>\\HEMMASERVER\Data\Reparationsunderlag_Installfolder\|\\192.168.0.117\Data\Reparationsunderlag_Installfolder\|\\192.168.0.117\Data\Reparationsunderlag_Installfolder_Beta\|http://test.sandbergsjarn.se/Reparationsunderlag_Files/|http://192.168.0.10/Reparationsunderlag_Files/</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory>http://test.sandbergsjarn.se/Reparationsunderlag_Files/|http://ftpcluster.loopia.se/Reparationsunderlag_Files/</UpdateUrlHistory>
     <BootstrapperUrlHistory>https://download.microsoft.com/download/A/1/2/A129F694-233C-4C7C-860F-F73139CF2E01/ENU/x86/ReportViewer.msi</BootstrapperUrlHistory>

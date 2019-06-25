@@ -10,7 +10,7 @@
     <AssemblyName>Reparationsunderlag</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>\\192.168.0.117\Data\Reparationsunderlag_Installfolder\</PublishUrl>
+    <PublishUrl>\\HEMMASERVER\Data\Reparationsunderlag_Installfolder\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -20,14 +20,14 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>\\192.168.0.117\Data\Reparationsunderlag_Installfolder\</InstallUrl>
+    <InstallUrl>\\HEMMASERVER\Data\Reparationsunderlag_Installfolder\</InstallUrl>
     <ProductName>Reparationsunderlag</ProductName>
     <PublisherName>Sandbergs Järn</PublisherName>
     <MinimumRequiredVersion>1.11.1.1</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>14</ApplicationRevision>
-    <ApplicationVersion>1.11.20.%2a</ApplicationVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>3.1.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -136,6 +136,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reparationsunderlag\Properties.cs" />
+    <Compile Include="Reparationsunderlag_SelectionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reparationsunderlag_SelectionDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Splashscreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +217,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Reparationsunderlag_SelectionDataSet.xsc">
+      <DependentUpon>Reparationsunderlag_SelectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reparationsunderlag_SelectionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reparationsunderlag_SelectionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reparationsunderlag_SelectionDataSet.xss">
+      <DependentUpon>Reparationsunderlag_SelectionDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Reparationsunderlag_TemporaryKey.pfx" />
     <None Include="ReportsApplication1_TemporaryKey.pfx" />
   </ItemGroup>
@@ -231,12 +247,22 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Reparationsunderlag_Selection.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reparationsunderlag_Selection_log.ldf">
+      <DependentUpon>Reparationsunderlag_Selection.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Reparationsunderlag_Splash.png" />
     <None Include="Resources\BG_Image.png" />
     <None Include="Resources\Logga_v1.png" />
     <None Include="Resources\sandbergs-logo-e1456731172110.png" />
     <None Include="Resources\Eclipse-1.4s-200px.gif" />
     <Content Include="Wrenchicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

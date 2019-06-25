@@ -77,7 +77,7 @@ namespace Reparationsunderlag
 
                 
 
-                this.reportViewer1.RefreshReport();
+                //this.reportViewer1.RefreshReport();
                 this.ReparationsunderlagBindingSource.MoveLast();
 
                 
@@ -138,7 +138,7 @@ namespace Reparationsunderlag
 
                 
 
-                this.reportViewer1.RefreshReport();
+                //this.reportViewer1.RefreshReport();
                 this.ReparationsunderlagBindingSource.MoveLast();
 
                 
@@ -194,7 +194,7 @@ namespace Reparationsunderlag
 
             
 
-            this.reportViewer1.RefreshReport();
+            //this.reportViewer1.RefreshReport();
         }
 
         private void saveToolStripButton_Click(object sender, EventArgs e)
@@ -220,7 +220,7 @@ namespace Reparationsunderlag
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
             
-            this.ReparationsunderlagTableAdapter.Fill(this.DataSet1.Reparationsunderlag);
+            //this.ReparationsunderlagTableAdapter.Fill(this.DataSet1.Reparationsunderlag);
             this.ReparationsunderlagBindingSource.AddNew();
             this.ReparationsunderlagBindingSource.MoveLast();
 
@@ -279,6 +279,7 @@ namespace Reparationsunderlag
             {
 
                 //this.Validate();
+                this.reportViewer1.RefreshReport();
                 this.ReparationsunderlagBindingSource.EndEdit();
                 this.tableAdapterManager.UpdateAll(this.DataSet1);
                 reportViewer1.PrinterSettings.Copies = 2;
@@ -385,6 +386,11 @@ namespace Reparationsunderlag
         }
 
         private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void repunderlag_selection_source_CurrentChanged(object sender, EventArgs e)
         {
 
         }
