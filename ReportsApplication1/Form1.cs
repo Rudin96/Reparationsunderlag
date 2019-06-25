@@ -21,8 +21,8 @@ namespace Reparationsunderlag
         {
             // TODO: This line of code loads data into the 'kassasystem_DataSet.Artiklar' table. You can move, or remove it, as needed.
 
-            //reportViewer1.ServerReport.ReportPath = Properties.Settings.Default.ReportViewerServerPath;
-            //reportViewer1.ServerReport.ReportServerUrl = Properties.Settings.Default.ReportViewerURL;
+            //reportViewer1.LocalReport.ReportPath = Properties.Settings.Default.ReportViewerServerPath;
+            //reportViewer1.LocalReport.ReportServerUrl = Properties.Settings.Default.ReportViewerURL;
             
 
             if (Inställningar.Default.bHasSeenNotes == true)
@@ -73,7 +73,7 @@ namespace Reparationsunderlag
                 ReportParameter r11 = new ReportParameter("SelectedStaffID", User);
                 ReportParameter r12 = new ReportParameter("SelectedMark", Mark);
                 ReportParameter r13 = new ReportParameter("SelectedMachinetype", MachineType);
-                reportViewer1.ServerReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
+                reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
 
                 
 
@@ -134,7 +134,7 @@ namespace Reparationsunderlag
                 ReportParameter r11 = new ReportParameter("SelectedStaffID", User);
                 ReportParameter r12 = new ReportParameter("SelectedMark", Mark);
                 ReportParameter r13 = new ReportParameter("SelectedMachinetype", MachineType);
-                reportViewer1.ServerReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
+                reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
 
                 
 
@@ -190,7 +190,7 @@ namespace Reparationsunderlag
             ReportParameter r11 = new ReportParameter("SelectedStaffID", User);
             ReportParameter r12 = new ReportParameter("SelectedMark", Mark);
             ReportParameter r13 = new ReportParameter("SelectedMachinetype", Machinetype);
-            reportViewer1.ServerReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
+            reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
 
             
 
