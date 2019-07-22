@@ -194,7 +194,7 @@ namespace Reparationsunderlag
 
             
 
-            //this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
         }
 
         private void saveToolStripButton_Click(object sender, EventArgs e)
@@ -278,12 +278,14 @@ namespace Reparationsunderlag
             else
             {
 
-                //this.Validate();
+                this.Validate();
                 this.reportViewer1.RefreshReport();
                 this.ReparationsunderlagBindingSource.EndEdit();
                 this.tableAdapterManager.UpdateAll(this.DataSet1);
                 reportViewer1.PrinterSettings.Copies = 2;
                 reportViewer1.PrintDialog();
+                //reportViewer1.PrinterSettings.Copies = 2;
+                //reportViewer1.PrintDialog();
             }
             
             

@@ -67,8 +67,6 @@ namespace Reparationsunderlag
             this.dokumentDatumDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.dokumentIDTextBox = new System.Windows.Forms.TextBox();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.repunderlag_selection_source = new System.Windows.Forms.BindingSource(this.components);
-            this.reparationsunderlag_SelectionDataSet = new Reparationsunderlag.Reparationsunderlag_SelectionDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -96,6 +94,8 @@ namespace Reparationsunderlag
             this.serienummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.märkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maskintypDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.repunderlag_selection_source = new System.Windows.Forms.BindingSource(this.components);
+            this.reparationsunderlag_SelectionDataSet = new Reparationsunderlag.Reparationsunderlag_SelectionDataSet();
             this.reparationsunderlagBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.artiklarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kassasystem_DataSet = new Reparationsunderlag.Kassasystem_DataSet();
@@ -150,10 +150,10 @@ namespace Reparationsunderlag
             ((System.ComponentModel.ISupportInitialize)(this.pengvinDataset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.repunderlag_selection_source)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlag_SelectionDataSet)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repunderlag_selection_source)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlag_SelectionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlagBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.artiklarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kassasystem_DataSet)).BeginInit();
@@ -353,7 +353,6 @@ namespace Reparationsunderlag
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.reportViewer1);
-            this.splitContainer1.Panel2Collapsed = true;
             this.splitContainer1.Size = new System.Drawing.Size(1064, 731);
             this.splitContainer1.SplitterDistance = 554;
             this.splitContainer1.TabIndex = 0;
@@ -520,7 +519,7 @@ namespace Reparationsunderlag
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = null;
-            this.bindingNavigator1.BindingSource = this.repunderlag_selection_source;
+            this.bindingNavigator1.BindingSource = this.ReparationsunderlagBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
             this.bindingNavigator1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
@@ -543,20 +542,9 @@ namespace Reparationsunderlag
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1064, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(554, 25);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
-            // 
-            // repunderlag_selection_source
-            // 
-            this.repunderlag_selection_source.DataSource = this.reparationsunderlag_SelectionDataSet;
-            this.repunderlag_selection_source.Position = 0;
-            this.repunderlag_selection_source.CurrentChanged += new System.EventHandler(this.repunderlag_selection_source_CurrentChanged);
-            // 
-            // reparationsunderlag_SelectionDataSet
-            // 
-            this.reparationsunderlag_SelectionDataSet.DataSetName = "Reparationsunderlag_SelectionDataSet";
-            this.reparationsunderlag_SelectionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -605,7 +593,7 @@ namespace Reparationsunderlag
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "1";
+            this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             this.bindingNavigatorPositionItem.Visible = false;
             this.bindingNavigatorPositionItem.TextChanged += new System.EventHandler(this.UpdateReport);
@@ -665,8 +653,7 @@ namespace Reparationsunderlag
             this.reportViewer1.ServerReport.Timeout = -1;
             this.reportViewer1.ShowContextMenu = false;
             this.reportViewer1.ShowParameterPrompts = false;
-            this.reportViewer1.ShowToolBar = false;
-            this.reportViewer1.Size = new System.Drawing.Size(96, 100);
+            this.reportViewer1.Size = new System.Drawing.Size(506, 731);
             this.reportViewer1.TabIndex = 0;
             this.reportViewer1.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
             this.reportViewer1.Print += new Microsoft.Reporting.WinForms.ReportPrintEventHandler(this.reportViewer1_SendPrintInfo);
@@ -802,6 +789,17 @@ namespace Reparationsunderlag
             this.maskintypDataGridViewTextBoxColumn.HeaderText = "Maskintyp";
             this.maskintypDataGridViewTextBoxColumn.Name = "maskintypDataGridViewTextBoxColumn";
             this.maskintypDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // repunderlag_selection_source
+            // 
+            this.repunderlag_selection_source.DataSource = this.reparationsunderlag_SelectionDataSet;
+            this.repunderlag_selection_source.Position = 0;
+            this.repunderlag_selection_source.CurrentChanged += new System.EventHandler(this.repunderlag_selection_source_CurrentChanged);
+            // 
+            // reparationsunderlag_SelectionDataSet
+            // 
+            this.reparationsunderlag_SelectionDataSet.DataSetName = "Reparationsunderlag_SelectionDataSet";
+            this.reparationsunderlag_SelectionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reparationsunderlagBindingSource1
             // 
@@ -1071,10 +1069,10 @@ namespace Reparationsunderlag
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.repunderlag_selection_source)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlag_SelectionDataSet)).EndInit();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repunderlag_selection_source)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlag_SelectionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlagBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.artiklarBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kassasystem_DataSet)).EndInit();
