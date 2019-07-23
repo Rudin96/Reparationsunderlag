@@ -27,26 +27,26 @@
     <Setting Name="Kassasystem_Connectioninfo" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=DESKTOP-IHDVKIH;Initial Catalog=Kassasystem_Test;User ID=sa;Password=S4ndb3rgsj4rn&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=HEMMASERVER;Initial Catalog=Kassasystem_Test;User ID=sa;Password=Papperskorg123&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=DESKTOP-IHDVKIH;Initial Catalog=Kassasystem_Test;User ID=sa;Password=S4ndb3rgsj4rn</Value>
+      <Value Profile="(Default)">Data Source=HEMMASERVER;Initial Catalog=Kassasystem_Test;User ID=sa;Password=Papperskorg123</Value>
     </Setting>
     <Setting Name="REPARATIONS_DATAConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=DESKTOP-IHDVKIH;Initial Catalog=REPARATIONS_DATA;Persist Security Info=True;User ID=sa;Password=S4ndb3rgsj4rn&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=HEMMASERVER;Initial Catalog=REPARATIONS_DATA;Persist Security Info=True;User ID=sa;Password=Papperskorg123&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=DESKTOP-IHDVKIH;Initial Catalog=REPARATIONS_DATA;Persist Security Info=True;User ID=sa;Password=S4ndb3rgsj4rn</Value>
+      <Value Profile="(Default)">Data Source=HEMMASERVER;Initial Catalog=REPARATIONS_DATA;Persist Security Info=True;User ID=sa;Password=Papperskorg123</Value>
     </Setting>
     <Setting Name="PENGVIN_DATA01ConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=DESKTOP-IHDVKIH;Initial Catalog=PENGVIN_DATA01;Persist Security Info=True;User ID=sa;Password=S4ndb3rgsj4rn&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=HEMMASERVER;Initial Catalog=PENGVIN_DATA01;Persist Security Info=True;User ID=sa;Password=Papperskorg123&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=DESKTOP-IHDVKIH;Initial Catalog=PENGVIN_DATA01;Persist Security Info=True;User ID=sa;Password=S4ndb3rgsj4rn</Value>
+      <Value Profile="(Default)">Data Source=HEMMASERVER;Initial Catalog=PENGVIN_DATA01;Persist Security Info=True;User ID=sa;Password=Papperskorg123</Value>
     </Setting>
     <Setting Name="ReportViewerURL" Type="(Web Service URL)" Scope="User">
       <Value Profile="(Default)">(http://hemmaserver/reportserver)</Value>

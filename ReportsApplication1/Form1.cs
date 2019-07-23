@@ -21,8 +21,8 @@ namespace Reparationsunderlag
         {
             // TODO: This line of code loads data into the 'kassasystem_DataSet.Artiklar' table. You can move, or remove it, as needed.
 
-            //reportViewer1.LocalReport.ReportPath = Properties.Settings.Default.ReportViewerServerPath;
-            //reportViewer1.LocalReport.ReportServerUrl = Properties.Settings.Default.ReportViewerURL;
+            //reportViewer2.LocalReport.ReportPath = Properties.Settings.Default.ReportViewerServerPath;
+            //reportViewer2.LocalReport.ReportServerUrl = Properties.Settings.Default.ReportViewerURL;
             
 
             if (Inställningar.Default.bHasSeenNotes == true)
@@ -73,11 +73,11 @@ namespace Reparationsunderlag
                 ReportParameter r11 = new ReportParameter("SelectedStaffID", User);
                 ReportParameter r12 = new ReportParameter("SelectedMark", Mark);
                 ReportParameter r13 = new ReportParameter("SelectedMachinetype", MachineType);
-                reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
+                reportViewer2.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
 
                 
 
-                //this.reportViewer1.RefreshReport();
+                //this.reportViewer2.RefreshReport();
                 this.ReparationsunderlagBindingSource.MoveLast();
 
                 
@@ -134,11 +134,11 @@ namespace Reparationsunderlag
                 ReportParameter r11 = new ReportParameter("SelectedStaffID", User);
                 ReportParameter r12 = new ReportParameter("SelectedMark", Mark);
                 ReportParameter r13 = new ReportParameter("SelectedMachinetype", MachineType);
-                reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
+                reportViewer2.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
 
                 
 
-                //this.reportViewer1.RefreshReport();
+                //this.reportViewer2.RefreshReport();
                 this.ReparationsunderlagBindingSource.MoveLast();
 
                 
@@ -148,6 +148,8 @@ namespace Reparationsunderlag
 
             }
 
+            this.reportViewer2.RefreshReport();
+            this.reportViewer2.RefreshReport();
         }
 
         private void UpdateReport(object sender, EventArgs e)
@@ -190,11 +192,11 @@ namespace Reparationsunderlag
             ReportParameter r11 = new ReportParameter("SelectedStaffID", User);
             ReportParameter r12 = new ReportParameter("SelectedMark", Mark);
             ReportParameter r13 = new ReportParameter("SelectedMachinetype", Machinetype);
-            reportViewer1.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
+            reportViewer2.LocalReport.SetParameters(new ReportParameter[] { r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13 });
 
             
 
-            this.reportViewer1.RefreshReport();
+            this.reportViewer2.RefreshReport();
         }
 
         private void saveToolStripButton_Click(object sender, EventArgs e)
@@ -267,6 +269,8 @@ namespace Reparationsunderlag
         private void skrivUtToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            
+
             if (användareComboBox.SelectedIndex <= 0)
             {
 
@@ -279,27 +283,32 @@ namespace Reparationsunderlag
             {
 
                 this.Validate();
-                this.reportViewer1.RefreshReport();
+                this.reportViewer2.RefreshReport();
                 this.ReparationsunderlagBindingSource.EndEdit();
                 this.tableAdapterManager.UpdateAll(this.DataSet1);
-                reportViewer1.PrinterSettings.Copies = 2;
-                reportViewer1.PrintDialog();
-                //reportViewer1.PrinterSettings.Copies = 2;
-                //reportViewer1.PrintDialog();
+                
+                reportViewer2.PrinterSettings.Copies = 2;
+                reportViewer2.PrintDialog();
+                
             }
             
             
             
         }
 
-        private void ReportViewer1_Print(object sender, ReportPrintEventArgs e)
+        private void exportEventHandler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void reportViewer2_Print(object sender, ReportPrintEventArgs e)
         {
            
 
             throw new NotImplementedException();
         }
 
-        private void reportViewer1_SendPrintInfo(object sender, ReportPrintEventArgs e)
+        private void reportViewer2_SendPrintInfo(object sender, ReportPrintEventArgs e)
         {
             notifyIcon1.ShowBalloonTip(5, "Information", "Utskriften har skickats till skrivaren.",ToolTipIcon.Info);
             WindowState = FormWindowState.Minimized;
@@ -387,7 +396,7 @@ namespace Reparationsunderlag
 
         }
 
-        private void reportViewer1_Load(object sender, EventArgs e)
+        private void reportViewer2_Load(object sender, EventArgs e)
         {
 
         }
@@ -395,6 +404,12 @@ namespace Reparationsunderlag
         private void repunderlag_selection_source_CurrentChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void SettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SettingsForm SetForm = new SettingsForm();
+            SetForm.Show();
         }
     }
 }

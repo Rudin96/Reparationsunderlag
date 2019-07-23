@@ -67,6 +67,8 @@ namespace Reparationsunderlag
             this.dokumentDatumDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.dokumentIDTextBox = new System.Windows.Forms.TextBox();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.repunderlag_selection_source = new System.Windows.Forms.BindingSource(this.components);
+            this.reparationsunderlag_SelectionDataSet = new Reparationsunderlag.Reparationsunderlag_SelectionDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -78,7 +80,7 @@ namespace Reparationsunderlag
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dokumentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -94,8 +96,6 @@ namespace Reparationsunderlag
             this.serienummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.märkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maskintypDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.repunderlag_selection_source = new System.Windows.Forms.BindingSource(this.components);
-            this.reparationsunderlag_SelectionDataSet = new Reparationsunderlag.Reparationsunderlag_SelectionDataSet();
             this.reparationsunderlagBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.artiklarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kassasystem_DataSet = new Reparationsunderlag.Kassasystem_DataSet();
@@ -110,6 +110,7 @@ namespace Reparationsunderlag
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -120,11 +121,31 @@ namespace Reparationsunderlag
             this.visaÄndringsloggToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.omToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.avslutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.artiklarTableAdapter = new Reparationsunderlag.Kassasystem_DataSetTableAdapters.ArtiklarTableAdapter();
             this.tableAdapterManager1 = new Reparationsunderlag.Kassasystem_DataSetTableAdapters.TableAdapterManager();
             this.serviceController1 = new System.ServiceProcess.ServiceController();
             this.serviceController2 = new System.ServiceProcess.ServiceController();
             this.notifyIcon2 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.ClearSearchBtn = new System.Windows.Forms.Button();
+            this.PerformSearchBtn = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             dokumentIDLabel = new System.Windows.Forms.Label();
             dokumentDatumLabel = new System.Windows.Forms.Label();
             kundIDLabel = new System.Windows.Forms.Label();
@@ -150,10 +171,10 @@ namespace Reparationsunderlag
             ((System.ComponentModel.ISupportInitialize)(this.pengvinDataset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repunderlag_selection_source)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlag_SelectionDataSet)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlagBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.artiklarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kassasystem_DataSet)).BeginInit();
@@ -161,6 +182,10 @@ namespace Reparationsunderlag
             this.ReportViewerContextMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dokumentIDLabel
@@ -352,7 +377,7 @@ namespace Reparationsunderlag
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.reportViewer1);
+            this.splitContainer1.Panel2.Controls.Add(this.reportViewer2);
             this.splitContainer1.Size = new System.Drawing.Size(1064, 731);
             this.splitContainer1.SplitterDistance = 554;
             this.splitContainer1.TabIndex = 0;
@@ -546,6 +571,17 @@ namespace Reparationsunderlag
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
+            // repunderlag_selection_source
+            // 
+            this.repunderlag_selection_source.DataSource = this.reparationsunderlag_SelectionDataSet;
+            this.repunderlag_selection_source.Position = 0;
+            this.repunderlag_selection_source.CurrentChanged += new System.EventHandler(this.repunderlag_selection_source_CurrentChanged);
+            // 
+            // reparationsunderlag_SelectionDataSet
+            // 
+            this.reparationsunderlag_SelectionDataSet.DataSetName = "Reparationsunderlag_SelectionDataSet";
+            this.reparationsunderlag_SelectionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
@@ -638,31 +674,24 @@ namespace Reparationsunderlag
             this.bindingNavigatorAddNewItem.ToolTipText = "Lägg till ny post";
             this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
             // 
-            // reportViewer1
+            // reportViewer2
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.DocumentMapWidth = 30;
+            this.reportViewer2.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "Reparationsdataset";
             reportDataSource1.Value = this.ReparationsunderlagBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Reparationsunderlag.ReparationsUnderlag_Rapport.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.ReportPath = "/Reparationsunderlag/ReparationsUnderlag_Rapport";
-            this.reportViewer1.ServerReport.ReportServerUrl = new System.Uri("http://192.168.0.117/reportserver", System.UriKind.Absolute);
-            this.reportViewer1.ServerReport.Timeout = -1;
-            this.reportViewer1.ShowContextMenu = false;
-            this.reportViewer1.ShowParameterPrompts = false;
-            this.reportViewer1.Size = new System.Drawing.Size(506, 731);
-            this.reportViewer1.TabIndex = 0;
-            this.reportViewer1.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
-            this.reportViewer1.Print += new Microsoft.Reporting.WinForms.ReportPrintEventHandler(this.reportViewer1_SendPrintInfo);
-            this.reportViewer1.PrintingBegin += new Microsoft.Reporting.WinForms.ReportPrintEventHandler(this.reportViewer1_SendPrintInfo);
-            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
+            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer2.LocalReport.ReportEmbeddedResource = "Reparationsunderlag.ReparationsUnderlag_Rapport.rdlc";
+            this.reportViewer2.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer2.Name = "reportViewer2";
+            this.reportViewer2.ServerReport.ReportServerUrl = new System.Uri("", System.UriKind.Relative);
+            this.reportViewer2.ShowToolBar = false;
+            this.reportViewer2.Size = new System.Drawing.Size(506, 731);
+            this.reportViewer2.TabIndex = 0;
+            this.reportViewer2.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.FullPage;
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.dataGridView1);
+            this.tabPage4.Controls.Add(this.splitContainer2);
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1070, 737);
@@ -696,7 +725,7 @@ namespace Reparationsunderlag
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1070, 737);
+            this.dataGridView1.Size = new System.Drawing.Size(1070, 548);
             this.dataGridView1.TabIndex = 0;
             // 
             // dokumentIDDataGridViewTextBoxColumn
@@ -790,17 +819,6 @@ namespace Reparationsunderlag
             this.maskintypDataGridViewTextBoxColumn.Name = "maskintypDataGridViewTextBoxColumn";
             this.maskintypDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // repunderlag_selection_source
-            // 
-            this.repunderlag_selection_source.DataSource = this.reparationsunderlag_SelectionDataSet;
-            this.repunderlag_selection_source.Position = 0;
-            this.repunderlag_selection_source.CurrentChanged += new System.EventHandler(this.repunderlag_selection_source_CurrentChanged);
-            // 
-            // reparationsunderlag_SelectionDataSet
-            // 
-            this.reparationsunderlag_SelectionDataSet.DataSetName = "Reparationsunderlag_SelectionDataSet";
-            this.reparationsunderlag_SelectionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // reparationsunderlagBindingSource1
             // 
             this.reparationsunderlagBindingSource1.DataMember = "Reparationsunderlag";
@@ -879,6 +897,7 @@ namespace Reparationsunderlag
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button1);
@@ -890,6 +909,22 @@ namespace Reparationsunderlag
             this.panel1.Size = new System.Drawing.Size(1078, 799);
             this.panel1.TabIndex = 2;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(941, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(38, 29);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "S";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.SettingsToolStripMenuItem_Click);
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -898,9 +933,9 @@ namespace Reparationsunderlag
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(975, -4);
+            this.button2.Location = new System.Drawing.Point(985, -4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(53, 33);
+            this.button2.Size = new System.Drawing.Size(43, 33);
             this.button2.TabIndex = 4;
             this.button2.Text = "_";
             this.button2.UseVisualStyleBackColor = false;
@@ -959,7 +994,8 @@ namespace Reparationsunderlag
             this.skrivUtToolStripMenuItem1,
             this.visaÄndringsloggToolStripMenuItem,
             this.omToolStripMenuItem,
-            this.avslutaToolStripMenuItem});
+            this.avslutaToolStripMenuItem,
+            this.SettingsToolStripMenuItem});
             this.arkivToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.arkivToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.arkivToolStripMenuItem.Name = "arkivToolStripMenuItem";
@@ -1012,6 +1048,15 @@ namespace Reparationsunderlag
             this.avslutaToolStripMenuItem.Text = "Avsluta";
             this.avslutaToolStripMenuItem.Click += new System.EventHandler(this.avslutaProgrammetToolStripMenuItem_Click);
             // 
+            // SettingsToolStripMenuItem
+            // 
+            this.SettingsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SettingsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem";
+            this.SettingsToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
+            this.SettingsToolStripMenuItem.Text = "Inställningar";
+            this.SettingsToolStripMenuItem.Click += new System.EventHandler(this.SettingsToolStripMenuItem_Click);
+            // 
             // artiklarTableAdapter
             // 
             this.artiklarTableAdapter.ClearBeforeFill = true;
@@ -1036,6 +1081,187 @@ namespace Reparationsunderlag
             // 
             this.notifyIcon2.Text = "notifyIcon2";
             this.notifyIcon2.Visible = true;
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.Controls.Add(this.label6);
+            this.splitContainer2.Panel1.Controls.Add(this.label7);
+            this.splitContainer2.Panel1.Controls.Add(this.label8);
+            this.splitContainer2.Panel1.Controls.Add(this.label9);
+            this.splitContainer2.Panel1.Controls.Add(this.label4);
+            this.splitContainer2.Panel1.Controls.Add(this.label5);
+            this.splitContainer2.Panel1.Controls.Add(this.label3);
+            this.splitContainer2.Panel1.Controls.Add(this.label2);
+            this.splitContainer2.Panel1.Controls.Add(this.textBox5);
+            this.splitContainer2.Panel1.Controls.Add(this.textBox6);
+            this.splitContainer2.Panel1.Controls.Add(this.textBox7);
+            this.splitContainer2.Panel1.Controls.Add(this.textBox8);
+            this.splitContainer2.Panel1.Controls.Add(this.textBox3);
+            this.splitContainer2.Panel1.Controls.Add(this.textBox4);
+            this.splitContainer2.Panel1.Controls.Add(this.textBox2);
+            this.splitContainer2.Panel1.Controls.Add(this.textBox1);
+            this.splitContainer2.Panel1.Controls.Add(this.PerformSearchBtn);
+            this.splitContainer2.Panel1.Controls.Add(this.ClearSearchBtn);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.dataGridView1);
+            this.splitContainer2.Size = new System.Drawing.Size(1070, 737);
+            this.splitContainer2.SplitterDistance = 185;
+            this.splitContainer2.TabIndex = 1;
+            // 
+            // ClearSearchBtn
+            // 
+            this.ClearSearchBtn.Location = new System.Drawing.Point(257, 146);
+            this.ClearSearchBtn.Name = "ClearSearchBtn";
+            this.ClearSearchBtn.Size = new System.Drawing.Size(75, 23);
+            this.ClearSearchBtn.TabIndex = 0;
+            this.ClearSearchBtn.Text = "Rensa";
+            this.ClearSearchBtn.UseVisualStyleBackColor = true;
+            // 
+            // PerformSearchBtn
+            // 
+            this.PerformSearchBtn.Location = new System.Drawing.Point(338, 146);
+            this.PerformSearchBtn.Name = "PerformSearchBtn";
+            this.PerformSearchBtn.Size = new System.Drawing.Size(75, 23);
+            this.PerformSearchBtn.TabIndex = 1;
+            this.PerformSearchBtn.Text = "Sök";
+            this.PerformSearchBtn.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(99, 106);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(99, 80);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 3;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(99, 28);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 5;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(99, 54);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 4;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(313, 28);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 9;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(313, 54);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 8;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(313, 80);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 7;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(313, 106);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(58, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "label2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(58, 57);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "label3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(58, 109);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "label4";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(58, 83);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "label5";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(272, 109);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "label6";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(272, 83);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "label7";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(272, 57);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "label8";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(272, 31);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "label9";
             // 
             // Form1
             // 
@@ -1069,10 +1295,10 @@ namespace Reparationsunderlag
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repunderlag_selection_source)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlag_SelectionDataSet)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reparationsunderlagBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.artiklarBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kassasystem_DataSet)).EndInit();
@@ -1082,6 +1308,11 @@ namespace Reparationsunderlag
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.PerformLayout();
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1091,7 +1322,6 @@ namespace Reparationsunderlag
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource ReparationsunderlagBindingSource;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -1167,5 +1397,27 @@ namespace Reparationsunderlag
         public PengvinDataset pengvinDataset;
         private System.Windows.Forms.BindingSource repunderlag_selection_source;
         private Reparationsunderlag_SelectionDataSet reparationsunderlag_SelectionDataSet;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ToolStripMenuItem SettingsToolStripMenuItem;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
+        private System.Windows.Forms.SplitContainer splitContainer2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button PerformSearchBtn;
+        private System.Windows.Forms.Button ClearSearchBtn;
     }
 }

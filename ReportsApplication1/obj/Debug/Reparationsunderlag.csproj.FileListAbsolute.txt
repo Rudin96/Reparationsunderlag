@@ -218,3 +218,10 @@ C:\Users\Fikarummet\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj
 C:\Users\Fikarummet\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.csproj.CopyComplete
 C:\Users\Fikarummet\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.exe
 C:\Users\Fikarummet\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.pdb
+C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\Reparationsunderlag_Selection.mdf
+C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\Reparationsunderlag_Selection_log.ldf
+C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.SettingsForm.resources
+C:\Users\Tobias\Documents\GitHub\Reparationsunderlag\ReportsApplication1\obj\Debug\Reparationsunderlag.csproj.CopyComplete

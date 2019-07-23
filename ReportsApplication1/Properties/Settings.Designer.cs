@@ -12,7 +12,7 @@ namespace Reparationsunderlag.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.7.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
     public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -67,8 +67,8 @@ namespace Reparationsunderlag.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-IHDVKIH;Initial Catalog=Kassasystem_Test;User ID=sa;Password=" +
-            "S4ndb3rgsj4rn")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HEMMASERVER;Initial Catalog=Kassasystem_Test;User ID=sa;Password=Papp" +
+            "erskorg123")]
         public string Kassasystem_Connectioninfo {
             get {
                 return ((string)(this["Kassasystem_Connectioninfo"]));
@@ -78,8 +78,8 @@ namespace Reparationsunderlag.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-IHDVKIH;Initial Catalog=REPARATIONS_DATA;Persist Security Inf" +
-            "o=True;User ID=sa;Password=S4ndb3rgsj4rn")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HEMMASERVER;Initial Catalog=REPARATIONS_DATA;Persist Security Info=Tr" +
+            "ue;User ID=sa;Password=Papperskorg123")]
         public string REPARATIONS_DATAConnectionString {
             get {
                 return ((string)(this["REPARATIONS_DATAConnectionString"]));
@@ -89,8 +89,8 @@ namespace Reparationsunderlag.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-IHDVKIH;Initial Catalog=PENGVIN_DATA01;Persist Security Info=" +
-            "True;User ID=sa;Password=S4ndb3rgsj4rn")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HEMMASERVER;Initial Catalog=PENGVIN_DATA01;Persist Security Info=True" +
+            ";User ID=sa;Password=Papperskorg123")]
         public string PENGVIN_DATA01ConnectionString {
             get {
                 return ((string)(this["PENGVIN_DATA01ConnectionString"]));
